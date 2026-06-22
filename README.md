@@ -3,27 +3,28 @@
 Repository to collect model definitions and files for event generation using t-channel DM simplified models.
 
 
-## Leptophilic model: DMtsimp_leptons
+## Leptophilic model: DMsimpt_leptons
 
 ### Model
 
-The model corresponds to the addition of a lepton-like mediator ($Y$) and and a single scalar ($X_s$), both odd under an assumed $`\mathcal{Z}_2`$ symmetry.
+The model corresponds to the addition of a lepton-like mediator ($Y_F$) and and a single scalar ($X_s$), both odd under an assumed $`\mathcal{Z}_2`$ symmetry.
 Since the mediator is a singlet under $SU(2)_L$, the BSM Lagrangian is given by:
 
 ```math
 \begin{aligned}
-\mathcal{L} = \mathcal{L}_{SM} &+ \frac{1}{2} |\partial_\mu X_s|^2 -\frac{1}{2}m_{X_s}^2 |X_s|^2  + i \bar{\psi}_Y \gamma^\mu D_\mu \psi_Y - M_{Y} \bar{\psi}_Y \psi_F\\
+\mathcal{L}_{\rm BSM} =&  \frac{1}{2} |\partial_\mu X_s|^2 -\frac{1}{2} M_{X}^2 |X_s|^2  + i \bar{\psi}_Y \gamma^\mu D_\mu \psi_Y - M_{Y} \bar{\psi}_Y \psi_Y\\
 & - X_s \left( y_{FeR} \bar{\psi}_Y e_R + y_{FmuR} \bar{\psi}_Y \mu_R + y_{FtaR} \bar{\psi}_Y \tau_R + h.c.  \right)\\
- &- \frac{1}{4} \lambda_{Xs} X_s^4 - \lambda_{XsH} X_s^2 |H|^2
+ &- \frac{1}{4} \lambda_{Xs} X_s^4 - \lambda_{XsH} X_s^2 \left(|H|^2 - \frac{v^2}{2}\right)
 \end{aligned}
 ```
+
 
 #### UFO Model
 
 Two versions of the UFO model are available:
 
  * [DMsimpt_leptons_UFO](./DMsimpt_leptons/DMsimpt_leptons_UFO): LO model corresponding to the Lagrangian above.
-* [DMtsimp_leptons_NLO_UFO](./DMsimpt_leptons/DMtsimp_leptons_NLO_UFO): NLO model corresponding to the Lagrangian above. In this model QCD NLO corrections are implemented and can be used to generate NLO events.
+* [DMsimpt_leptons_NLO_UFO](./DMsimpt_leptons/DMsimpt_leptons_NLO_UFO): NLO model corresponding to the Lagrangian above. In this model QCD NLO corrections are implemented and can be used to generate NLO events or compute cross-sections at NLO.
 
 The relevant parameters (see [param_card.dat](./Cards/param_card.dat)) are:
 
