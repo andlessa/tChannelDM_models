@@ -1,0 +1,159 @@
+# This file was automatically created by FeynRules 2.3.36
+# Mathematica version: 10.4.0 for Mac OS X x86 (64-bit) (February 26, 2016)
+# Date: Tue 22 Sep 2020 11:43:45
+
+
+# 
+# This is the logfile for the model DMsimp_t
+
+# Authors: Benjamin Fuks
+# Model version: 1.2
+# Checking the Quantum numbers
+   * Electric charge defined.
+# Checking the Lagrangians
+   * All Lagrangians are ok.
+#
+# Particle definitions
+#
+
+   * No particles removed. All particles correspond to GenInt setup.
+
+# Automatically assigned PDG numbers
+   * Assigned PDG number 9000001 to particle ghA
+   * Assigned PDG number 9000002 to particle ghZ
+   * Assigned PDG number 9000003 to particle ghWp
+   * Assigned PDG number 9000004 to particle ghWm
+
+
+# Compulsory PDG codes:
+   * Class SM leptons complete.
+   * Class SM neutrinos complete.
+   * Class SM quarks complete.
+   * Class SM gauge bosons complete.
+#
+# Parameter definitions
+#
+
+   * All parameters are ok.
+
+
+# Vertices
+   * Calling FeynmanRules for 1 Lagrangians.
+   * Number of classes vertices: 463
+   * Number of flavored vertices: 463
+   * Saved vertices in InterfaceRun[ 1 ].
+   * Checked QNumber conservation.
+      - Quantum number GhostNumber conserved in all vertices.
+      - Quantum number LeptonNumber conserved in all vertices.
+      - Quantum number Q conserved in all vertices.
+      - Quantum number Y NOT conserved in the following vertices
+          {Xcbar, dbar, YF3d1}
+          {Xcbar, sbar, YF3d2}
+          {Xcbar, bbar, YF3d3}
+          {Xs, dbar, YF3d1}
+          {Xs, sbar, YF3d2}
+          {Xs, bbar, YF3d3}
+          {Xcbar, ubar, YF3u1}
+          {Xcbar, cbar, YF3u2}
+          {Xcbar, tbar, YF3u3}
+          {Xs, ubar, YF3u1}
+          {Xs, cbar, YF3u2}
+          {Xs, tbar, YF3u3}
+          {Xc, YF3d1bar, d}
+          {Xc, YF3d2bar, s}
+          {Xc, YF3d3bar, b}
+          {Xs, YF3d1bar, d}
+          {Xs, YF3d2bar, s}
+          {Xs, YF3d3bar, b}
+          {Xc, YF3u1bar, u}
+          {Xc, YF3u2bar, c}
+          {Xc, YF3u3bar, t}
+          {Xs, YF3u1bar, u}
+          {Xs, YF3u2bar, c}
+          {Xs, YF3u3bar, t}
+          {YS3d1, dbar, Xd}
+          {YS3d1, dbar, Xm}
+          {YS3d1bar, Xdbar, d}
+          {YS3d1bar, Xm, d}
+          {YS3d2, sbar, Xd}
+          {YS3d2, sbar, Xm}
+          {YS3d2bar, Xdbar, s}
+          {YS3d2bar, Xm, s}
+          {YS3d3, bbar, Xd}
+          {YS3d3, bbar, Xm}
+          {YS3d3bar, Xdbar, b}
+          {YS3d3bar, Xm, b}
+          {YS3u1, ubar, Xd}
+          {YS3u1, ubar, Xm}
+          {YS3u1bar, Xdbar, u}
+          {YS3u1bar, Xm, u}
+          {YS3u2, cbar, Xd}
+          {YS3u2, cbar, Xm}
+          {YS3u2bar, Xdbar, c}
+          {YS3u2bar, Xm, c}
+          {YS3u3, tbar, Xd}
+          {YS3u3, tbar, Xm}
+          {YS3u3bar, Xdbar, t}
+          {YS3u3bar, Xm, t}
+          {Xv, YF3d1bar, d}
+          {Xv, YF3d2bar, s}
+          {Xv, YF3d3bar, b}
+          {Xv, YF3u1bar, u}
+          {Xv, YF3u2bar, c}
+          {Xv, YF3u3bar, t}
+          {Xw, YF3d1bar, d}
+          {Xw, YF3d2bar, s}
+          {Xw, YF3d3bar, b}
+          {Xw, YF3u1bar, u}
+          {Xw, YF3u2bar, c}
+          {Xw, YF3u3bar, t}
+          {Xv, dbar, YF3d1}
+          {Xv, sbar, YF3d2}
+          {Xv, bbar, YF3d3}
+          {Xv, ubar, YF3u1}
+          {Xv, cbar, YF3u2}
+          {Xv, tbar, YF3u3}
+          {Xwbar, dbar, YF3d1}
+          {Xwbar, sbar, YF3d2}
+          {Xwbar, bbar, YF3d3}
+          {Xwbar, ubar, YF3u1}
+          {Xwbar, cbar, YF3u2}
+          {Xwbar, tbar, YF3u3}
+   * particles.py written.
+   * parameters.py written.
+#
+# Vertex definitions
+#
+
+   * 463 vertices written.
+   * vertices.py written.
+#
+# Lorentz structure definitions
+#
+
+   * 23 lorentz structures written.
+   * lorentz.py written.
+#
+# Coupling definitions
+#
+
+   * 139 couplings written.
+   * couplings.py written.
+#
+# Coupling order definitions
+#
+
+   * 0 couplings orders written.
+   * coupling_orders.py written.
+#
+# Decay definitions
+#
+
+   * 42 decays written.
+   * decay.py not written
+#
+# CTCoupling definitions
+#
+
+   * 0 CTcouplings written.
+   * CT_couplings.py written.
