@@ -12,9 +12,9 @@ M$ExtParams = {
 	Gf -> 0.0000116637,
 	lamXs -> 0.1,
 	lamXsH -> 0.02,
-	yFbR -> 1/10000000,
-	yFqR -> 1/10000000,
-	yFtR -> 1/10000000,
+	yFbR -> 1.,
+	yFqR -> 1.,
+	yFtR -> 1.,
 	ymb -> 4.7,
 	ymt -> 172,
 	ymtau -> 1.777

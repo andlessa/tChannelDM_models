@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Mon 22 Jun 2026 19:30:18
+# Date: Mon 22 Jun 2026 19:51:45
 
 
 from object_library import all_vertices, Vertex
@@ -1018,126 +1018,108 @@ V_168 = Vertex(name = 'V_168',
                couplings = {(0,0):C.GC_52})
 
 V_169 = Vertex(name = 'V_169',
-               particles = [ P.<>CreateObjectParticleName[PartNameMG[YFuRbar]], P.<>CreateObjectParticleName[PartNameMG[YFuR]], P.a ],
-               color = [ 'Identity(1,2)' ],
-               lorentz = [ L.FFV1 ],
-               couplings = {(0,0):C.GC_2})
-
-V_170 = Vertex(name = 'V_170',
                particles = [ P.YFd__tilde__, P.d, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1 ],
                couplings = {(0,0):C.GC_115})
 
-V_171 = Vertex(name = 'V_171',
+V_170 = Vertex(name = 'V_170',
                particles = [ P.YFd__tilde__, P.s, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1 ],
                couplings = {(0,0):C.GC_115})
 
-V_172 = Vertex(name = 'V_172',
+V_171 = Vertex(name = 'V_171',
                particles = [ P.YFd__tilde__, P.b, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1 ],
                couplings = {(0,0):C.GC_114})
 
-V_173 = Vertex(name = 'V_173',
+V_172 = Vertex(name = 'V_172',
                particles = [ P.YFu__tilde__, P.u, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1 ],
                couplings = {(0,0):C.GC_115})
 
-V_174 = Vertex(name = 'V_174',
+V_173 = Vertex(name = 'V_173',
                particles = [ P.YFu__tilde__, P.c, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1 ],
                couplings = {(0,0):C.GC_115})
 
-V_175 = Vertex(name = 'V_175',
+V_174 = Vertex(name = 'V_174',
                particles = [ P.YFu__tilde__, P.t, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1 ],
                couplings = {(0,0):C.GC_116})
 
-V_176 = Vertex(name = 'V_176',
+V_175 = Vertex(name = 'V_175',
                particles = [ P.d__tilde__, P.YFd, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS3 ],
                couplings = {(0,0):C.GC_115})
 
-V_177 = Vertex(name = 'V_177',
+V_176 = Vertex(name = 'V_176',
                particles = [ P.s__tilde__, P.YFd, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS3 ],
                couplings = {(0,0):C.GC_115})
 
-V_178 = Vertex(name = 'V_178',
+V_177 = Vertex(name = 'V_177',
                particles = [ P.b__tilde__, P.YFd, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS3 ],
                couplings = {(0,0):C.GC_114})
 
-V_179 = Vertex(name = 'V_179',
+V_178 = Vertex(name = 'V_178',
                particles = [ P.u__tilde__, P.YFu, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS3 ],
                couplings = {(0,0):C.GC_115})
 
-V_180 = Vertex(name = 'V_180',
+V_179 = Vertex(name = 'V_179',
                particles = [ P.c__tilde__, P.YFu, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS3 ],
                couplings = {(0,0):C.GC_115})
 
-V_181 = Vertex(name = 'V_181',
+V_180 = Vertex(name = 'V_180',
                particles = [ P.t__tilde__, P.YFu, P.Xs ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS3 ],
                couplings = {(0,0):C.GC_116})
 
-V_182 = Vertex(name = 'V_182',
-               particles = [ P.<>CreateObjectParticleName[PartNameMG[YFuRbar]], P.<>CreateObjectParticleName[PartNameMG[YFuR]], P.g ],
-               color = [ 'T(3,2,1)' ],
-               lorentz = [ L.FFV1 ],
-               couplings = {(0,0):C.GC_11})
-
-V_183 = Vertex(name = 'V_183',
-               particles = [ P.<>CreateObjectParticleName[PartNameMG[YFuRbar]], P.<>CreateObjectParticleName[PartNameMG[YFuR]], P.Z ],
-               color = [ 'Identity(1,2)' ],
-               lorentz = [ L.FFV1 ],
-               couplings = {(0,0):C.GC_77})
-
-V_184 = Vertex(name = 'V_184',
+V_181 = Vertex(name = 'V_181',
                particles = [ P.YFd__tilde__, P.YFd, P.a ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFV1 ],
                couplings = {(0,0):C.GC_1})
 
-V_185 = Vertex(name = 'V_185',
+V_182 = Vertex(name = 'V_182',
                particles = [ P.YFd__tilde__, P.YFd, P.Z ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFV1 ],
                couplings = {(0,0):C.GC_76})
 
-V_186 = Vertex(name = 'V_186',
+V_183 = Vertex(name = 'V_183',
                particles = [ P.YFu__tilde__, P.YFu, P.a ],
                color = [ 'Identity(1,2)' ],
-               lorentz = [ L.FFV2 ],
+               lorentz = [ L.FFV1 ],
                couplings = {(0,0):C.GC_2})
 
-V_187 = Vertex(name = 'V_187',
+V_184 = Vertex(name = 'V_184',
                particles = [ P.YFu__tilde__, P.YFu, P.Z ],
                color = [ 'Identity(1,2)' ],
-               lorentz = [ L.FFV2 ],
+               lorentz = [ L.FFV1 ],
                couplings = {(0,0):C.GC_77})
 
-V_188 = Vertex(name = 'V_188',
+V_185 = Vertex(name = 'V_185',
                particles = [ P.YFu__tilde__, P.YFu, P.g ],
                color = [ 'T(3,2,1)' ],
-               lorentz = [ L.FFV2 ],
+               lorentz = [ L.FFV1 ],
                couplings = {(0,0):C.GC_11})
 
-V_189 = Vertex(name = 'V_189',
+V_186 = Vertex(name = 'V_186',
                particles = [ P.YFd__tilde__, P.YFd, P.g ],
                color = [ 'T(3,2,1)' ],
                lorentz = [ L.FFV1 ],

@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Mon 22 Jun 2026 18:48:24
+# Date: Mon 22 Jun 2026 19:49:41
 
 
 from object_library import all_couplings, Coupling
@@ -26,63 +26,63 @@ GC_12 = Coupling(name = 'GC_12',
                  order = {'QCD':1})
 
 GC_13 = Coupling(name = 'GC_13',
-                 value = 'G',
-                 order = {'QCD':1})
-
-GC_14 = Coupling(name = 'GC_14',
                  value = '-(complex(0,1)*G**2)',
                  order = {'QCD':2})
 
-GC_15 = Coupling(name = 'GC_15',
+GC_14 = Coupling(name = 'GC_14',
                  value = 'complex(0,1)*G**2',
                  order = {'QCD':2})
 
-GC_16 = Coupling(name = 'GC_16',
+GC_15 = Coupling(name = 'GC_15',
                  value = 'I1a33',
                  order = {'QED':1})
 
-GC_17 = Coupling(name = 'GC_17',
+GC_16 = Coupling(name = 'GC_16',
                  value = '-I2a33',
                  order = {'QED':1})
 
-GC_18 = Coupling(name = 'GC_18',
+GC_17 = Coupling(name = 'GC_17',
                  value = 'I3a33',
                  order = {'QED':1})
 
-GC_19 = Coupling(name = 'GC_19',
+GC_18 = Coupling(name = 'GC_18',
                  value = '-I4a33',
                  order = {'QED':1})
+
+GC_19 = Coupling(name = 'GC_19',
+                 value = '-2*complex(0,1)*lam',
+                 order = {'QED':2})
 
 GC_2 = Coupling(name = 'GC_2',
                 value = '(2*ee*complex(0,1))/3.',
                 order = {'QED':1})
 
 GC_20 = Coupling(name = 'GC_20',
-                 value = '-2*complex(0,1)*lam',
-                 order = {'QED':2})
-
-GC_21 = Coupling(name = 'GC_21',
                  value = '-4*complex(0,1)*lam',
                  order = {'QED':2})
 
-GC_22 = Coupling(name = 'GC_22',
+GC_21 = Coupling(name = 'GC_21',
                  value = '-6*complex(0,1)*lam',
                  order = {'QED':2})
 
-GC_23 = Coupling(name = 'GC_23',
+GC_22 = Coupling(name = 'GC_22',
                  value = '-6*complex(0,1)*lamXs',
                  order = {'NP':1})
 
-GC_24 = Coupling(name = 'GC_24',
+GC_23 = Coupling(name = 'GC_23',
                  value = '-2*complex(0,1)*lamXsH',
                  order = {'NP':1})
 
-GC_25 = Coupling(name = 'GC_25',
+GC_24 = Coupling(name = 'GC_24',
                  value = '(ee**2*complex(0,1))/(2.*sw**2)',
                  order = {'QED':2})
 
-GC_26 = Coupling(name = 'GC_26',
+GC_25 = Coupling(name = 'GC_25',
                  value = '-((ee**2*complex(0,1))/sw**2)',
+                 order = {'QED':2})
+
+GC_26 = Coupling(name = 'GC_26',
+                 value = '(2*ee**2*complex(0,1))/sw**2',
                  order = {'QED':2})
 
 GC_27 = Coupling(name = 'GC_27',
@@ -278,7 +278,7 @@ GC_7 = Coupling(name = 'GC_7',
                 order = {'QED':2})
 
 GC_70 = Coupling(name = 'GC_70',
-                 value = '-2*complex(0,1)*yFbR',
+                 value = '-(complex(0,1)*yFbR)',
                  order = {'NP':1})
 
 GC_71 = Coupling(name = 'GC_71',
@@ -286,7 +286,7 @@ GC_71 = Coupling(name = 'GC_71',
                  order = {'NP':1})
 
 GC_72 = Coupling(name = 'GC_72',
-                 value = '-2*complex(0,1)*yFtR',
+                 value = '-(complex(0,1)*yFtR)',
                  order = {'NP':1})
 
 GC_73 = Coupling(name = 'GC_73',

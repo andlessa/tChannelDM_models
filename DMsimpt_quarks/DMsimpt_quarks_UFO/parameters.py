@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Mon 22 Jun 2026 19:30:18
+# Date: Mon 22 Jun 2026 19:51:45
 
 
 
@@ -124,7 +124,7 @@ ymtau = Parameter(name = 'ymtau',
 yFqR = Parameter(name = 'yFqR',
                  nature = 'external',
                  type = 'real',
-                 value = 1.e-7,
+                 value = 1.,
                  texname = 'y_{\\text{YqR}}',
                  lhablock = 'FRBlock',
                  lhacode = [ 1 ])
@@ -132,7 +132,7 @@ yFqR = Parameter(name = 'yFqR',
 yFbR = Parameter(name = 'yFbR',
                  nature = 'external',
                  type = 'real',
-                 value = 1.e-7,
+                 value = 1.,
                  texname = 'y_{\\text{YbR}}',
                  lhablock = 'FRBlock',
                  lhacode = [ 2 ])
@@ -140,7 +140,7 @@ yFbR = Parameter(name = 'yFbR',
 yFtR = Parameter(name = 'yFtR',
                  nature = 'external',
                  type = 'real',
-                 value = 1.e-7,
+                 value = 1.,
                  texname = 'y_{\\text{YtR}}',
                  lhablock = 'FRBlock',
                  lhacode = [ 3 ])
@@ -308,7 +308,7 @@ WH = Parameter(name = 'WH',
 WYu = Parameter(name = 'WYu',
                 nature = 'external',
                 type = 'real',
-                value = 1.375e-13,
+                value = 13.7,
                 texname = '\\text{WYu}',
                 lhablock = 'DECAY',
                 lhacode = [ 5910002 ])
@@ -316,7 +316,7 @@ WYu = Parameter(name = 'WYu',
 WYd = Parameter(name = 'WYd',
                 nature = 'external',
                 type = 'real',
-                value = 1.375e-13,
+                value = 13.7,
                 texname = '\\text{WYd}',
                 lhablock = 'DECAY',
                 lhacode = [ 5910001 ])

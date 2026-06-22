@@ -41,7 +41,7 @@ M$Parameters = {
               TeX->Subscript[y,YqR],
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->10^(-7), 
+              Value->1.0, 
               InteractionOrder->{NP ,1}, 
               Description->"Dark scalar - heavy quark - 1st/2nd generation quarks Yukawa"
             },
@@ -50,7 +50,7 @@ M$Parameters = {
               TeX->Subscript[y,YbR], 
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->10^(-7), 
+              Value->1.0, 
               InteractionOrder->{NP ,1}, 
               Description->"Dark scalar - heavy quark - bottom quark Yukawa"
             },
@@ -59,7 +59,7 @@ M$Parameters = {
               TeX->Subscript[y,YtR],
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->10^(-7), 
+              Value->1.0, 
               InteractionOrder->{NP ,1}, 
               Description->"Dark scalar - heavy quark - top quark Yukawa"
             },
@@ -113,7 +113,7 @@ F[200] == {
             AntiParticleName -> {"YFu~"},
             PDG -> {5910002},
             Mass  -> {MYu, 500.0},
-            Width -> {WYu, 1.375*10^(-13)},
+            Width -> {WYu, 13.7},
             FullName -> {"Up-type Mediator"}
           },
 
@@ -132,7 +132,7 @@ F[202] == {
             Indices        -> {Index[Colour]},
             SelfConjugate  -> False,
             QuantumNumbers -> {Y -> 2/3},
-            Definitions    -> { YFuR[sp1_cc_] :> Module[{sp2}, ProjP[sp1,sp2] YFu[sp2,cc]] } 
+            Definitions    -> { YFuR[sp1_,cc_] :> Module[{sp2}, ProjP[sp1,sp2] YFu[sp2,cc]] } 
           },
 
 (* Heavy bottom-like quark *)
@@ -145,7 +145,7 @@ F[300] == {
             AntiParticleName -> {"YFd~"},
             PDG -> {5910001},
             Mass  -> {MYd, 500.0},
-            Width -> {WYd, 1.375*10^(-13)},
+            Width -> {WYd,13.7},
             FullName -> {"Up-type Mediator"}
           },
 
@@ -181,8 +181,8 @@ LNP := Block[{LKinDM, LKinYF, LintF,LintXs,cc,ii,mu,sp,feynmangaugerules},
 
     LYukawaBSM := - Xs*yFqR*(YFubar[sp,cc].uR[sp,1,cc] + YFubar[sp,cc].uR[sp,2,cc])\
                   - Xs*yFqR*(YFdbar[sp,cc].dR[sp,1,cc] + YFdbar[sp,cc].dR[sp,2,cc])\
-                  - Xs*yFtR*(YFubar[sp,cc].uR[sp,3,cc] + YFubar[sp,cc].uR[sp,3,cc])\
-                  - Xs*yFbR*(YFdbar[sp,cc].dR[sp,3,cc] + YFdbar[sp,cc].dR[sp,3,cc]);
+                  - Xs*yFtR*(YFubar[sp,cc].uR[sp,3,cc])\
+                  - Xs*yFbR*(YFdbar[sp,cc].dR[sp,3,cc]);
                   
     LintF := LYukawaBSM + HC[LYukawaBSM];
 
