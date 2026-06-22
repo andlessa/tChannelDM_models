@@ -99,7 +99,7 @@ The remaining parameters (`lamXsH` and `lamXs`) are not relevant for the mediato
 
 Cards for event generation can be found in [Cards](./DMsimpt_quarks/Cards) and can be used to generate
 parton-level events with MadGraph5.
-For instance, the up-type mediator production can be computed at LO (NLO) using the MadGraph5 syntax: `p p > yf yf~` (`p p > yf yf~ [QCD]`).
+For instance, the up-type mediator production can be computed at LO (NLO) using the MadGraph5 syntax: `p p > yfu yfu~` (`p p > yfu yfu~ [QCD]`).
 
 
 --------------------------------------
