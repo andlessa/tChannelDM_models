@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Mon 22 Jun 2026 13:54:54
+# Date: Mon 22 Jun 2026 15:26:37
 
 
 
@@ -124,7 +124,7 @@ ymtau = Parameter(name = 'ymtau',
 yFeR = Parameter(name = 'yFeR',
                  nature = 'external',
                  type = 'real',
-                 value = -5 + e,
+                 value = 1.e-7,
                  texname = 'y_{\\text{YeR}}',
                  lhablock = 'FRBlock',
                  lhacode = [ 1 ])
@@ -132,7 +132,7 @@ yFeR = Parameter(name = 'yFeR',
 yFmuR = Parameter(name = 'yFmuR',
                   nature = 'external',
                   type = 'real',
-                  value = -5 + e,
+                  value = 1.e-7,
                   texname = 'y_{\\text{YmuR}}',
                   lhablock = 'FRBlock',
                   lhacode = [ 2 ])
@@ -140,7 +140,7 @@ yFmuR = Parameter(name = 'yFmuR',
 yFtaR = Parameter(name = 'yFtaR',
                   nature = 'external',
                   type = 'real',
-                  value = -5 + e,
+                  value = 1.e-7,
                   texname = 'y_{\\text{YtaR}}',
                   lhablock = 'FRBlock',
                   lhacode = [ 3 ])
@@ -249,21 +249,21 @@ MH = Parameter(name = 'MH',
                lhablock = 'MASS',
                lhacode = [ 25 ])
 
-MXs = Parameter(name = 'MXs',
-                nature = 'external',
-                type = 'real',
-                value = 100.,
-                texname = '\\text{MXs}',
-                lhablock = 'MASS',
-                lhacode = [ 51 ])
+MX = Parameter(name = 'MX',
+               nature = 'external',
+               type = 'real',
+               value = 100.,
+               texname = '\\text{MX}',
+               lhablock = 'MASS',
+               lhacode = [ 51 ])
 
-MYF = Parameter(name = 'MYF',
-                nature = 'external',
-                type = 'real',
-                value = 500.,
-                texname = '\\text{MYF}',
-                lhablock = 'MASS',
-                lhacode = [ 5920011 ])
+MY = Parameter(name = 'MY',
+               nature = 'external',
+               type = 'real',
+               value = 500.,
+               texname = '\\text{MY}',
+               lhablock = 'MASS',
+               lhacode = [ 5920011 ])
 
 WZ = Parameter(name = 'WZ',
                nature = 'external',
@@ -297,13 +297,13 @@ WH = Parameter(name = 'WH',
                lhablock = 'DECAY',
                lhacode = [ 25 ])
 
-WYF = Parameter(name = 'WYF',
-                nature = 'external',
-                type = 'real',
-                value = 1.,
-                texname = '\\text{WYF}',
-                lhablock = 'DECAY',
-                lhacode = [ 5920011 ])
+WY = Parameter(name = 'WY',
+               nature = 'external',
+               type = 'real',
+               value = 1.375e-13,
+               texname = '\\text{WY}',
+               lhablock = 'DECAY',
+               lhacode = [ 5920011 ])
 
 aEW = Parameter(name = 'aEW',
                 nature = 'internal',
@@ -422,7 +422,7 @@ vev = Parameter(name = 'vev',
 muXs2 = Parameter(name = 'muXs2',
                   nature = 'internal',
                   type = 'real',
-                  value = 'MXs**2 - lamXsH*vev**2',
+                  value = 'MX**2 - lamXsH*vev**2',
                   texname = '\\mu _{\\text{Xs}}')
 
 lam = Parameter(name = 'lam',

@@ -11,7 +11,7 @@
 (*******************************************************************************)
 (*******************************************************************************)
 
-M$ModelName = "DMsimpT-leptons";
+M$ModelName = "DMsimpt-leptons";
 
 M$Information = {Authors -> {"Andre Lessa"}, 
                  Version -> "1.1",
@@ -32,7 +32,7 @@ M$Parameters = {
               TeX->Subscript[\[Mu],Xs],
               ComplexParameter -> False, 
               ParameterType->Internal, 
-              Value->MXs^2 - lamXsH vev^2,  
+              Value->MX^2 - lamXsH vev^2,  
               Description->"Dark scalar Lagrangian mass parameter"
             },
                                                                                                   
@@ -41,7 +41,7 @@ M$Parameters = {
               TeX->Subscript[y,YeR],
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->1e-5, 
+              Value->10^(-7), 
               InteractionOrder->{NP ,1}, 
               Description->"Dark scalar - heavy electron - SM RH electron Yukawa"
             },
@@ -50,7 +50,7 @@ M$Parameters = {
               TeX->Subscript[y,YmuR], 
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->1e-5, 
+              Value->10^(-7), 
               InteractionOrder->{NP ,1}, 
               Description->"Dark scalar - heavy electron - SM RH muon Yukawa"
             },
@@ -59,7 +59,7 @@ M$Parameters = {
               TeX->Subscript[y,YtaR],
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->1e-5, 
+              Value->10^(-7), 
               InteractionOrder->{NP ,1}, 
               Description->"Dark scalar - heavy electron - SM RH tau Yukawa"
             },
@@ -93,9 +93,8 @@ M$ClassesDescription = {
 (* The dark scalar *)
 S[100] == { 
             ClassName -> Xs, 
-            SelfConjugate-> True, 
-            QuantumNumbers -> {}, 
-            Mass->{MXs,  100.0},  
+            SelfConjugate-> True,
+            Mass->{MX,  100.0},  
             Width-> 0, 
             ParticleName-> "Xs", 
             PDG->51, 
@@ -110,11 +109,26 @@ F[200] == {
             ClassName -> YF, 
             SelfConjugate -> False,
             Indices -> {}, 
-            QuantumNumbers -> {Q->-1, LeptonNumber -> 1}, 
+            QuantumNumbers -> {Q -> -1, LeptonNumber -> 1},
             PDG -> {5920011},
-            Mass  -> {MYF, 500.0},
-            Width -> {WYF, 1.0}
-          }
+            Mass  -> {MY, 500.0},
+            Width -> {WY, 1.375*10^(-13)}
+          },
+
+F[201] == { 
+          ClassName      -> YFL,
+          Unphysical     -> True, 
+          Indices        -> {},
+          SelfConjugate  -> False,
+          QuantumNumbers -> {Y -> -1, LeptonNumber -> 1},
+          Definitions    -> { YFL[sp1_] :> Module[{sp2}, ProjM[sp1,sp2] YF[sp2]] } },
+F[202] == { 
+          ClassName      -> YFR,
+          Unphysical     -> True, 
+          Indices        -> {},
+          SelfConjugate  -> False,
+          QuantumNumbers -> {Y -> -1, LeptonNumber -> 1},
+          Definitions    -> { YFR[sp1_] :> Module[{sp2}, ProjP[sp1,sp2] YF[sp2]] } }       
 };
 
 (* ************************** *)
@@ -124,7 +138,7 @@ F[200] == {
 LNP := Block[{LKinDM, LKinYF, LintF,LintXs, ii,mu,sp,feynmangaugerules},
 
     feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];  
-    LkinYF := I*YFbar.Ga[mu].DC[YF, mu] - MYF YFbar.YF;
+    LkinYF := I*( YFLbar.Ga[mu].DC[YFL, mu] + YFRbar.Ga[mu].DC[YFR, mu] ) - MY YFbar.YF;
     LkinDM :=  1/2 del[Xs,mu]^2 - 1/2 muXs2 Xs^2;
 
     LYukawaBSM := - Xs*(yFeR YFbar[sp].lR[sp,1] - yFmuR YFbar[sp].lR[sp,2] - yFtaR YFbar[sp].lR[sp,3]);

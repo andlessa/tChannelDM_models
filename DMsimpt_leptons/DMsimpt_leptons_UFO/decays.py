@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Mon 22 Jun 2026 13:54:54
+# Date: Mon 22 Jun 2026 15:26:37
 
 
 from object_library import all_decays, Decay
@@ -28,7 +28,7 @@ Decay_d = Decay(name = 'Decay_d',
 Decay_e__minus__ = Decay(name = 'Decay_e__minus__',
                          particle = P.e__minus__,
                          partial_widths = {(P.W__minus__,P.ve):'((Me**2 - MW**2)*((ee**2*Me**2)/(2.*sw**2) + (ee**2*Me**4)/(2.*MW**2*sw**2) - (ee**2*MW**2)/sw**2))/(32.*cmath.pi*abs(Me)**3)',
-                                           (P.Xs,P.YF):'((Me**2*yFeR**2 - MXs**2*yFeR**2 + MYF**2*yFeR**2)*cmath.sqrt(Me**4 - 2*Me**2*MXs**2 + MXs**4 - 2*Me**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(32.*cmath.pi*abs(Me)**3)'})
+                                           (P.Xs,P.YF):'((Me**2*yFeR**2 - MX**2*yFeR**2 + MY**2*yFeR**2)*cmath.sqrt(Me**4 - 2*Me**2*MX**2 + MX**4 - 2*Me**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(32.*cmath.pi*abs(Me)**3)'})
 
 Decay_H = Decay(name = 'Decay_H',
                 particle = P.H,
@@ -42,13 +42,13 @@ Decay_H = Decay(name = 'Decay_H',
                                   (P.ta__minus__,P.ta__plus__):'((MH**2*ytau**2 - 4*MTA**2*ytau**2)*cmath.sqrt(MH**4 - 4*MH**2*MTA**2))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.u,P.u__tilde__):'((3*MH**2*yup**2 - 12*MU**2*yup**2)*cmath.sqrt(MH**4 - 4*MH**2*MU**2))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.W__minus__,P.W__plus__):'(((3*ee**4*vev**2)/(4.*sw**4) + (ee**4*MH**4*vev**2)/(16.*MW**4*sw**4) - (ee**4*MH**2*vev**2)/(4.*MW**2*sw**4))*cmath.sqrt(MH**4 - 4*MH**2*MW**2))/(16.*cmath.pi*abs(MH)**3)',
-                                  (P.Xs,P.Xs):'(lamXsH**2*vev**2*cmath.sqrt(MH**4 - 4*MH**2*MXs**2))/(8.*cmath.pi*abs(MH)**3)',
+                                  (P.Xs,P.Xs):'(lamXsH**2*vev**2*cmath.sqrt(MH**4 - 4*MH**2*MX**2))/(8.*cmath.pi*abs(MH)**3)',
                                   (P.Z,P.Z):'(((9*ee**4*vev**2)/2. + (3*ee**4*MH**4*vev**2)/(8.*MZ**4) - (3*ee**4*MH**2*vev**2)/(2.*MZ**2) + (3*cw**4*ee**4*vev**2)/(4.*sw**4) + (cw**4*ee**4*MH**4*vev**2)/(16.*MZ**4*sw**4) - (cw**4*ee**4*MH**2*vev**2)/(4.*MZ**2*sw**4) + (3*cw**2*ee**4*vev**2)/sw**2 + (cw**2*ee**4*MH**4*vev**2)/(4.*MZ**4*sw**2) - (cw**2*ee**4*MH**2*vev**2)/(MZ**2*sw**2) + (3*ee**4*sw**2*vev**2)/cw**2 + (ee**4*MH**4*sw**2*vev**2)/(4.*cw**2*MZ**4) - (ee**4*MH**2*sw**2*vev**2)/(cw**2*MZ**2) + (3*ee**4*sw**4*vev**2)/(4.*cw**4) + (ee**4*MH**4*sw**4*vev**2)/(16.*cw**4*MZ**4) - (ee**4*MH**2*sw**4*vev**2)/(4.*cw**4*MZ**2))*cmath.sqrt(MH**4 - 4*MH**2*MZ**2))/(32.*cmath.pi*abs(MH)**3)'})
 
 Decay_mu__minus__ = Decay(name = 'Decay_mu__minus__',
                           particle = P.mu__minus__,
                           partial_widths = {(P.W__minus__,P.vm):'((MMU**2 - MW**2)*((ee**2*MMU**2)/(2.*sw**2) + (ee**2*MMU**4)/(2.*MW**2*sw**2) - (ee**2*MW**2)/sw**2))/(32.*cmath.pi*abs(MMU)**3)',
-                                            (P.Xs,P.YF):'((MMU**2*yFmuR**2 - MXs**2*yFmuR**2 + MYF**2*yFmuR**2)*cmath.sqrt(MMU**4 - 2*MMU**2*MXs**2 + MXs**4 - 2*MMU**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(32.*cmath.pi*abs(MMU)**3)'})
+                                            (P.Xs,P.YF):'((MMU**2*yFmuR**2 - MX**2*yFmuR**2 + MY**2*yFmuR**2)*cmath.sqrt(MMU**4 - 2*MMU**2*MX**2 + MX**4 - 2*MMU**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(32.*cmath.pi*abs(MMU)**3)'})
 
 Decay_s = Decay(name = 'Decay_s',
                 particle = P.s,
@@ -65,7 +65,7 @@ Decay_t = Decay(name = 'Decay_t',
 Decay_ta__minus__ = Decay(name = 'Decay_ta__minus__',
                           particle = P.ta__minus__,
                           partial_widths = {(P.W__minus__,P.vt):'((MTA**2 - MW**2)*((ee**2*MTA**2)/(2.*sw**2) + (ee**2*MTA**4)/(2.*MW**2*sw**2) - (ee**2*MW**2)/sw**2))/(32.*cmath.pi*abs(MTA)**3)',
-                                            (P.Xs,P.YF):'((MTA**2*yFtaR**2 - MXs**2*yFtaR**2 + MYF**2*yFtaR**2)*cmath.sqrt(MTA**4 - 2*MTA**2*MXs**2 + MXs**4 - 2*MTA**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(32.*cmath.pi*abs(MTA)**3)'})
+                                            (P.Xs,P.YF):'((MTA**2*yFtaR**2 - MX**2*yFtaR**2 + MY**2*yFtaR**2)*cmath.sqrt(MTA**4 - 2*MTA**2*MX**2 + MX**4 - 2*MTA**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(32.*cmath.pi*abs(MTA)**3)'})
 
 Decay_u = Decay(name = 'Decay_u',
                 particle = P.u,
@@ -90,18 +90,18 @@ Decay_W__plus__ = Decay(name = 'Decay_W__plus__',
 
 Decay_Xs = Decay(name = 'Decay_Xs',
                  particle = P.Xs,
-                 partial_widths = {(P.e__minus__,P.YF__tilde__):'((-(Me**2*yFeR**2) + MXs**2*yFeR**2 - MYF**2*yFeR**2)*cmath.sqrt(Me**4 - 2*Me**2*MXs**2 + MXs**4 - 2*Me**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(16.*cmath.pi*abs(MXs)**3)',
-                                   (P.mu__minus__,P.YF__tilde__):'((-(MMU**2*yFmuR**2) + MXs**2*yFmuR**2 - MYF**2*yFmuR**2)*cmath.sqrt(MMU**4 - 2*MMU**2*MXs**2 + MXs**4 - 2*MMU**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(16.*cmath.pi*abs(MXs)**3)',
-                                   (P.ta__minus__,P.YF__tilde__):'((-(MTA**2*yFtaR**2) + MXs**2*yFtaR**2 - MYF**2*yFtaR**2)*cmath.sqrt(MTA**4 - 2*MTA**2*MXs**2 + MXs**4 - 2*MTA**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(16.*cmath.pi*abs(MXs)**3)',
-                                   (P.YF,P.e__plus__):'((-(Me**2*yFeR**2) + MXs**2*yFeR**2 - MYF**2*yFeR**2)*cmath.sqrt(Me**4 - 2*Me**2*MXs**2 + MXs**4 - 2*Me**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(16.*cmath.pi*abs(MXs)**3)',
-                                   (P.YF,P.mu__plus__):'((-(MMU**2*yFmuR**2) + MXs**2*yFmuR**2 - MYF**2*yFmuR**2)*cmath.sqrt(MMU**4 - 2*MMU**2*MXs**2 + MXs**4 - 2*MMU**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(16.*cmath.pi*abs(MXs)**3)',
-                                   (P.YF,P.ta__plus__):'((-(MTA**2*yFtaR**2) + MXs**2*yFtaR**2 - MYF**2*yFtaR**2)*cmath.sqrt(MTA**4 - 2*MTA**2*MXs**2 + MXs**4 - 2*MTA**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(16.*cmath.pi*abs(MXs)**3)'})
+                 partial_widths = {(P.e__minus__,P.YF__tilde__):'((-(Me**2*yFeR**2) + MX**2*yFeR**2 - MY**2*yFeR**2)*cmath.sqrt(Me**4 - 2*Me**2*MX**2 + MX**4 - 2*Me**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(16.*cmath.pi*abs(MX)**3)',
+                                   (P.mu__minus__,P.YF__tilde__):'((-(MMU**2*yFmuR**2) + MX**2*yFmuR**2 - MY**2*yFmuR**2)*cmath.sqrt(MMU**4 - 2*MMU**2*MX**2 + MX**4 - 2*MMU**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(16.*cmath.pi*abs(MX)**3)',
+                                   (P.ta__minus__,P.YF__tilde__):'((-(MTA**2*yFtaR**2) + MX**2*yFtaR**2 - MY**2*yFtaR**2)*cmath.sqrt(MTA**4 - 2*MTA**2*MX**2 + MX**4 - 2*MTA**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(16.*cmath.pi*abs(MX)**3)',
+                                   (P.YF,P.e__plus__):'((-(Me**2*yFeR**2) + MX**2*yFeR**2 - MY**2*yFeR**2)*cmath.sqrt(Me**4 - 2*Me**2*MX**2 + MX**4 - 2*Me**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(16.*cmath.pi*abs(MX)**3)',
+                                   (P.YF,P.mu__plus__):'((-(MMU**2*yFmuR**2) + MX**2*yFmuR**2 - MY**2*yFmuR**2)*cmath.sqrt(MMU**4 - 2*MMU**2*MX**2 + MX**4 - 2*MMU**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(16.*cmath.pi*abs(MX)**3)',
+                                   (P.YF,P.ta__plus__):'((-(MTA**2*yFtaR**2) + MX**2*yFtaR**2 - MY**2*yFtaR**2)*cmath.sqrt(MTA**4 - 2*MTA**2*MX**2 + MX**4 - 2*MTA**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(16.*cmath.pi*abs(MX)**3)'})
 
 Decay_YF = Decay(name = 'Decay_YF',
                  particle = P.YF,
-                 partial_widths = {(P.Xs,P.e__minus__):'((Me**2*yFeR**2 - MXs**2*yFeR**2 + MYF**2*yFeR**2)*cmath.sqrt(Me**4 - 2*Me**2*MXs**2 + MXs**4 - 2*Me**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(32.*cmath.pi*abs(MYF)**3)',
-                                   (P.Xs,P.mu__minus__):'((MMU**2*yFmuR**2 - MXs**2*yFmuR**2 + MYF**2*yFmuR**2)*cmath.sqrt(MMU**4 - 2*MMU**2*MXs**2 + MXs**4 - 2*MMU**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(32.*cmath.pi*abs(MYF)**3)',
-                                   (P.Xs,P.ta__minus__):'((MTA**2*yFtaR**2 - MXs**2*yFtaR**2 + MYF**2*yFtaR**2)*cmath.sqrt(MTA**4 - 2*MTA**2*MXs**2 + MXs**4 - 2*MTA**2*MYF**2 - 2*MXs**2*MYF**2 + MYF**4))/(32.*cmath.pi*abs(MYF)**3)'})
+                 partial_widths = {(P.Xs,P.e__minus__):'((Me**2*yFeR**2 - MX**2*yFeR**2 + MY**2*yFeR**2)*cmath.sqrt(Me**4 - 2*Me**2*MX**2 + MX**4 - 2*Me**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(32.*cmath.pi*abs(MY)**3)',
+                                   (P.Xs,P.mu__minus__):'((MMU**2*yFmuR**2 - MX**2*yFmuR**2 + MY**2*yFmuR**2)*cmath.sqrt(MMU**4 - 2*MMU**2*MX**2 + MX**4 - 2*MMU**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(32.*cmath.pi*abs(MY)**3)',
+                                   (P.Xs,P.ta__minus__):'((MTA**2*yFtaR**2 - MX**2*yFtaR**2 + MY**2*yFtaR**2)*cmath.sqrt(MTA**4 - 2*MTA**2*MX**2 + MX**4 - 2*MTA**2*MY**2 - 2*MX**2*MY**2 + MY**4))/(32.*cmath.pi*abs(MY)**3)'})
 
 Decay_Z = Decay(name = 'Decay_Z',
                 particle = P.Z,
@@ -117,5 +117,6 @@ Decay_Z = Decay(name = 'Decay_Z',
                                   (P.ve,P.ve__tilde__):'(MZ**2*(ee**2*MZ**2 + (cw**2*ee**2*MZ**2)/(2.*sw**2) + (ee**2*MZ**2*sw**2)/(2.*cw**2)))/(48.*cmath.pi*abs(MZ)**3)',
                                   (P.vm,P.vm__tilde__):'(MZ**2*(ee**2*MZ**2 + (cw**2*ee**2*MZ**2)/(2.*sw**2) + (ee**2*MZ**2*sw**2)/(2.*cw**2)))/(48.*cmath.pi*abs(MZ)**3)',
                                   (P.vt,P.vt__tilde__):'(MZ**2*(ee**2*MZ**2 + (cw**2*ee**2*MZ**2)/(2.*sw**2) + (ee**2*MZ**2*sw**2)/(2.*cw**2)))/(48.*cmath.pi*abs(MZ)**3)',
-                                  (P.W__minus__,P.W__plus__):'(((-12*cw**2*ee**2*MW**2)/sw**2 - (17*cw**2*ee**2*MZ**2)/sw**2 + (4*cw**2*ee**2*MZ**4)/(MW**2*sw**2) + (cw**2*ee**2*MZ**6)/(4.*MW**4*sw**2))*cmath.sqrt(-4*MW**2*MZ**2 + MZ**4))/(48.*cmath.pi*abs(MZ)**3)'})
+                                  (P.W__minus__,P.W__plus__):'(((-12*cw**2*ee**2*MW**2)/sw**2 - (17*cw**2*ee**2*MZ**2)/sw**2 + (4*cw**2*ee**2*MZ**4)/(MW**2*sw**2) + (cw**2*ee**2*MZ**6)/(4.*MW**4*sw**2))*cmath.sqrt(-4*MW**2*MZ**2 + MZ**4))/(48.*cmath.pi*abs(MZ)**3)',
+                                  (P.YF,P.YF__tilde__):'(((8*ee**2*MY**2*sw**2)/cw**2 + (4*ee**2*MZ**2*sw**2)/cw**2)*cmath.sqrt(-4*MY**2*MZ**2 + MZ**4))/(48.*cmath.pi*abs(MZ)**3)'})
 

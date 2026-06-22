@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Mon 22 Jun 2026 13:54:54
+# Date: Mon 22 Jun 2026 15:25:15
 
 
 from object_library import all_orders, CouplingOrder
@@ -12,7 +12,8 @@ NP = CouplingOrder(name = 'NP',
 
 QCD = CouplingOrder(name = 'QCD',
                     expansion_order = 99,
-                    hierarchy = 1)
+                    hierarchy = 1,
+                    perturbative_expansion = 1)
 
 QED = CouplingOrder(name = 'QED',
                     expansion_order = 99,
