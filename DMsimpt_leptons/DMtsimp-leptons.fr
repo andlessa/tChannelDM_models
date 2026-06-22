@@ -1,0 +1,139 @@
+(*******************************************************************************)
+(*******************************************************************************)
+(****** t-channel Dark Matter Simplfied Model with a Lepton-like Mediator ******)
+(******                                                                   ******)
+(****** Authors:  Andre Lessa                                             ******)
+(******                                                                   ******)
+(****** The model is a version of the model presented in arXiv:1803.10379 ******)
+(****** and following the notation of the DMsimpt_t_leptons model from    ******)
+(****** "http://feynrules.irmp.ucl.ac.be/wiki/DMsimpt_leptons/"           ******)
+(******  written by Chiara Arina                                          ******)
+(*******************************************************************************)
+(*******************************************************************************)
+
+M$ModelName = "DMsimpT-leptons";
+
+M$Information = {Authors -> {"Andre Lessa"}, 
+                 Version -> "1.1",
+                 Date -> "18.06.2026"
+                };
+FeynmanGauge = True;
+
+M$InteractionOrderHierarchy = {  {NP,  1}, {QCD, 1}, {QED, 2} };
+
+(* ************************** *)
+(* *****   Parameters   ***** *)
+(* ************************** *)
+
+M$Parameters = {
+
+ (* Internal parameters*)
+  muXs2   == { 
+              TeX->Subscript[\[Mu],Xs],
+              ComplexParameter -> False, 
+              ParameterType->Internal, 
+              Value->MXs^2 - lamXsH vev^2,  
+              Description->"Dark scalar Lagrangian mass parameter"
+            },
+                                                                                                  
+ (* External NP parameters*)
+  yFeR  == { 
+              TeX->Subscript[y,YeR],
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->1e-5, 
+              InteractionOrder->{NP ,1}, 
+              Description->"Dark scalar - heavy electron - SM RH electron Yukawa"
+            },
+
+  yFmuR == { 
+              TeX->Subscript[y,YmuR], 
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->1e-5, 
+              InteractionOrder->{NP ,1}, 
+              Description->"Dark scalar - heavy electron - SM RH muon Yukawa"
+            },
+
+  yFtaR == { 
+              TeX->Subscript[y,YtaR],
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->1e-5, 
+              InteractionOrder->{NP ,1}, 
+              Description->"Dark scalar - heavy electron - SM RH tau Yukawa"
+            },
+
+  lamXsH == { 
+              TeX->Subscript[\[Lambda],xsh], 
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->0.02,
+              InteractionOrder->{NP ,1}, 
+              Description->"Dark scalar - Higgs doublet coupling"
+            },
+
+  lamXs  == { 
+              TeX->Subscript[\[Lambda],xs],  
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->0.1,     
+              InteractionOrder->{NP, 1}, 
+              Description->"Dark scalar quartic interaction"
+            }
+
+};
+
+(* ************************** *)
+(* **** Particle classes **** *)
+(* ************************** *)
+M$ClassesDescription = {
+
+
+(* The dark scalar *)
+S[100] == { 
+            ClassName -> Xs, 
+            SelfConjugate-> True, 
+            QuantumNumbers -> {}, 
+            Mass->{MXs,  100.0},  
+            Width-> 0, 
+            ParticleName-> "Xs", 
+            PDG->51, 
+            PropagatorLabel->"Xs", 
+            PropagatorType->ScalarDash, 
+            ParticleName     -> {"Xs" },
+            FullName         -> {"Dark scalar"} 
+        },
+
+(* Heavy charged lepton: Physical *)
+F[200] == { 
+            ClassName -> YF, 
+            SelfConjugate -> False,
+            Indices -> {}, 
+            QuantumNumbers -> {Q->-1, LeptonNumber -> 1}, 
+            PDG -> {5920011},
+            Mass  -> {MYF, 500.0},
+            Width -> {WYF, 1.0}
+          }
+};
+
+(* ************************** *)
+(* *****   Lagrangian   ***** *)
+(* ************************** *)
+
+LNP := Block[{LKinDM, LKinYF, LintF,LintXs, ii,mu,sp,feynmangaugerules},
+
+    feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];  
+    LkinYF := I*YFbar.Ga[mu].DC[YF, mu] - MYF YFbar.YF;
+    LkinDM :=  1/2 del[Xs,mu]^2 - 1/2 muXs2 Xs^2;
+
+    LYukawaBSM := - Xs*(yFeR YFbar[sp].lR[sp,1] - yFmuR YFbar[sp].lR[sp,2] - yFtaR YFbar[sp].lR[sp,3]);
+    LintF := LYukawaBSM + HC[LYukawaBSM];
+
+    LintXs :=  ExpandIndices[
+                              -(lamXs/4) Xs^4 - lamXsH Xs^2 Phibar[ii] Phi[ii], 
+                              FlavorExpand->{SU2D,SU2W}
+                            ]/.feynmangaugerules;
+
+    LkinDM + LintXs + LkinYF + LintF
+];
