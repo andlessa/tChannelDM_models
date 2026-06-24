@@ -1,0 +1,168 @@
+(* ****************************************************************** *)
+(* *****                                                        ***** *)
+(* *****  FeynRules model file: Simplified DM models            ***** *)
+(* *****                                                        ***** *)
+(* *****   t-channel with non-coloured mediator                 ***** *)
+(* *****   coupling to leptons                                  ***** *)
+(* *****                                                        ***** *)
+(* *****  Author: Chiara Arina                                  ***** *)
+(* *****                                                        ***** *)
+(* ****************************************************************** *)
+
+(* ************************** *)
+(* *****  Information   ***** *)
+(* ************************** *)
+M$ModelName = "DMsimp_t_leptons";
+
+M$Information = { Authors->{"Chiara Arina"}, Emails->{"chiara.arina@uclouvain.be"},
+                  Institutions->{"UCLouvain"},
+                  Date->"31.01.2020", Version->"1.0",
+                  URLs->"http://feynrules.irmp.ucl.ac.be/wiki/DMsimpt_leptons/"};
+
+(* ************************** *)
+(* *****  Change  log   ***** *)
+(* ************************** *)
+
+(* 2020.01.31 v1.0 - First version                       *)
+
+(* ************************** *)
+(* *** Interaction orders *** *)
+(* ************************** *)
+M$InteractionOrderLimit     = { {DMT, 2} };
+M$InteractionOrderHierarchy = { {DMT, 2}, {QED, 2} };
+
+(* ************************** *)
+(* *****     Fields     ***** *)
+(* ************************** *)
+M$ClassesDescription = {
+  (* Dark matter *)
+  F[100] == { ClassName -> Xm, SelfConjugate -> True,
+              Mass -> {MXm, 10.}, Width -> 0, PDG -> 52},
+  F[101] == { ClassName -> Xd, SelfConjugate -> False,
+              Mass -> {MXd, 13.}, Width -> 0, PDG -> 57},
+  S[100] == { ClassName -> Xs, SelfConjugate -> True,
+              Mass -> {MXs, 11.}, Width -> 0, PDG -> 51},
+  S[101] == { ClassName -> Xc, SelfConjugate -> False,
+              Mass -> {MXc, 14.}, Width -> 0, PDG -> 56},
+  V[100] == { ClassName -> Xv, SelfConjugate -> True,
+              Mass -> {MXv, 12.}, Width -> 0, PDG -> 53},
+  V[101] == { ClassName -> Xw, SelfConjugate -> False,
+              Mass -> {MXw, 15.}, Width -> 0, PDG -> 58},
+
+  (* Mediators *)
+
+  S[200] == { ClassName -> YS3L, Unphysical -> True, SelfConjugate -> False,
+              Indices -> {Index[SU2D],Index[Generation]}, FlavorIndex -> SU2D,
+              QuantumNumbers -> {Y->-1/2}, 
+              Definitions -> {YS3L[1,ff_]->YS3Ln[ff], YS3L[2,ff_]->YS3Le[ff]}},
+  S[201] == { ClassName -> YS3Le, SelfConjugate -> False,
+              Indices -> {Index[Generation]}, FlavorIndex -> Generation,
+              ClassMembers -> {YS3Le1, YS3Le2, YS3Le3},
+              QuantumNumbers -> {Q->-1}, PDG -> {5930012,5930014,5930016},
+              Mass  -> {MYS3Le, {MYS3Le1, 1000.}, {MYS3Le2, 1001.}, {MYS3Le3, 1002.}},
+              Width -> {WYS3Le, {WYS3Le1, 10.  }, {WYS3Le2, 11.  }, {WYS3Le3, 12.  }}},
+  S[202] == { ClassName -> YS3Ln, SelfConjugate -> False,
+              Indices -> {Index[Generation]}, FlavorIndex -> Generation,
+              ClassMembers -> {YS3Ln1, YS3Ln2, YS3Ln3},
+              QuantumNumbers -> {Q->0}, PDG -> {5930011,5930013,5930015},
+              Mass  -> {MYS3Ln, {MYS3Ln1, 1003.}, {MYS3Ln2, 1004.}, {MYS3Ln3, 1005.}},
+              Width -> {WYS3Ln, {WYS3Ln1, 13.  }, {WYS3Ln2, 14.  }, {WYS3Ln3, 15.  }}},
+  S[203] == { ClassName -> YS3e, SelfConjugate -> False,
+              Indices -> {Index[Generation]}, FlavorIndex -> Generation,
+              ClassMembers -> {YS3e1, YS3e2, YS3e3},
+              QuantumNumbers -> {Y->-1, Q->-1}, PDG -> {5940011,5940013,5940015},
+              Mass  -> {MYS3e, {MYS3e1, 2003.}, {MYS3e2, 2004.}, {MYS3e3, 2005.}},
+              Width -> {WYS3e, {WYS3e1, 23.  }, {WYS3e2, 24.  }, {WYS3e3, 25.  }}},
+  F[200] == { ClassName -> YF3L, Unphysical -> True, SelfConjugate -> False,
+              Indices -> {Index[SU2D],Index[Generation]}, FlavorIndex -> SU2D,
+              QuantumNumbers -> {Y->-1/2}, 
+              Definitions -> {YF3L[sp_,1,ff_]->YF3Ln[sp,ff], YF3L[sp_,2,ff_]->YF3Le[sp,ff]}},
+  F[201] == { ClassName -> YF3Le, SelfConjugate -> False,
+              Indices -> {Index[Generation]}, FlavorIndex -> Generation,
+              ClassMembers -> {YF3Le1, YF3Le2, YF3Le3},
+              QuantumNumbers -> {Q->-1}, PDG -> {5910012,5910014,5910016},
+              Mass  -> {MYF3Le, {MYF3Le1, 3000.}, {MYF3Le2, 3001.}, {MYF3Le3, 3002.}},
+              Width -> {WYF3Le, {WYF3Le1, 30.  }, {WYF3Le2, 31.  }, {WYF3Le3, 32.  }}},
+  F[202] == { ClassName -> YF3Ln, SelfConjugate -> False,
+              Indices -> {Index[Generation]}, FlavorIndex -> Generation,
+              ClassMembers -> {YF3Ln1, YF3Ln2, YF3Ln3},
+              QuantumNumbers -> {Q->0}, PDG -> {5910011,5910013,5910015},
+              Mass  -> {MYF3Ln, {MYF3Ln1, 3003.}, {MYF3Ln2, 3004.}, {MYF3Ln3, 3005.}},
+              Width -> {WYF3Ln, {WYF3Ln1, 33.  }, {WYF3Ln2, 34.  }, {WYF3Ln3, 35.  }}},
+  F[203] == { ClassName -> YF3e, SelfConjugate -> False,
+              Indices -> {Index[Generation]}, FlavorIndex -> Generation,
+              ClassMembers -> {YF3e1, YF3e2, YF3e3},
+              QuantumNumbers -> {Y->-1, Q->-1}, PDG -> {5920011,5920013,5920015},
+              Mass  -> {MYF3e, {MYF3e1, 4003.}, {MYF3e2, 4004.}, {MYF3e3, 4005.}},
+              Width -> {WYF3e, {WYF3e1, 43.  }, {WYF3e2, 44.  }, {WYF3e3, 45.  }}}
+
+};
+
+(* ************************** *)
+(* *****   Parameters   ***** *)
+(* ************************** *)
+M$Parameters = {
+
+ lamS3L == { ParameterType -> External, ComplexParameter -> False,
+            TeX -> Subscript[\[Lambda],L], BlockName -> DMS3L,
+            Indices -> {Index[Generation], Index[Generation]},
+            InteractionOrder -> {DMT,1},
+            Definitions -> {lamS3L[i_?NumericQ, j_?NumericQ] :> 0  /; (i=!=j)},
+            Value -> {lamS3L[1,1] -> 0.10, lamS3L[2,2] -> 0.11, lamS3L[3,3] -> 0.12}},
+ lamS3e == { ParameterType -> External, ComplexParameter -> False,
+            TeX -> Subscript[\[Lambda],e], BlockName -> DMS3E,
+            Indices -> {Index[Generation], Index[Generation]},
+            InteractionOrder -> {DMT,1},
+            Definitions -> {lamS3e[i_?NumericQ, j_?NumericQ] :> 0  /; (i=!=j)},
+            Value -> {lamS3e[1,1] -> 0.13, lamS3e[2,2] -> 0.14, lamS3e[3,3] -> 0.15}},
+ lamF3L == { ParameterType -> External, ComplexParameter -> False,
+            TeX -> Subscript[OverHat[\[Lambda]],L], BlockName -> DMF3L,
+            Indices -> {Index[Generation], Index[Generation]},
+            InteractionOrder -> {DMT,1},
+            Definitions -> {lamF3L[i_?NumericQ, j_?NumericQ] :> 0  /; (i=!=j)},
+            Value -> {lamF3L[1,1] -> 0.20, lamF3L[2,2] -> 0.21, lamF3L[3,3] -> 0.22}},
+ lamF3e == { ParameterType -> External, ComplexParameter -> False,
+            TeX -> Subscript[OverHat[\[Lambda]],e], BlockName -> DMF3E,
+            Indices -> {Index[Generation], Index[Generation]},
+            InteractionOrder -> {DMT,1},
+            Definitions -> {lamF3e[i_?NumericQ, j_?NumericQ] :> 0  /; (i=!=j)},
+            Value -> {lamF3e[1,1] -> 0.23, lamF3e[2,2] -> 0.24, lamF3e[3,3] -> 0.25}}
+};
+
+(* ************************** *)
+(* *****   Lagrangian   ***** *)
+(* ************************** *)
+
+LDMSIMPt := Block[{LKinDM, LKinS3, LKinF3, LIntS3, LIntF3, ii,ff,ffp,mu,nu,sp,sp2},
+  LKinDM :=  \
+      1/2 del[Xs,mu]^2 - 1/2 MXs^2 Xs^2 \
+    + del[Xc,mu] del[Xcbar,mu] - MXc^2 Xc Xcbar \
+    + I/2*Xmbar.Ga[mu].DC[Xm,mu] - 1/2 MXm Xmbar.Xm \
+    + I*Xdbar.Ga[mu].DC[Xd,mu] - MXd Xdbar.Xd \
+    - 1/4 FS[Xv,mu,nu]^2 + 1/2 MXv^2 Xv[mu]^2 \
+    - 1/2 FS[Xw,mu,nu] FS[Xwbar,mu,nu] + MXw^2 Xw[mu] Xwbar[mu];
+
+  LKinS3 :=  \
+      Plus @@ (DC[anti[#],mu] DC[#,mu] &/@ { YS3L[ii,ff], YS3ebar[ff]}) \
+    - MYS3Ln[ff]^2 YS3Lnbar[ff] YS3Ln[ff] - MYS3Le[ff]^2 YS3Lebar[ff] YS3Le[ff] \
+    - MYS3e[ff]^2 YS3ebar[ff] YS3e[ff];
+
+  LKinF3 :=  \
+      Plus @@ (I anti[#].Ga[mu].DC[#,mu] &/@ { YF3L, YF3e } ) \
+    - MYF3Ln[ff] YF3Lnbar[sp,ff].YF3Ln[sp,ff] - MYF3Le[ff] YF3Lebar[sp,ff].YF3Le[sp,ff] \
+    - MYF3e[ff] YF3ebar[sp,ff].YF3e[sp,ff];
+
+  LIntS3 := \
+     lamS3L[ff,ffp] Xmbar[sp].LL[sp,ii,ff] YS3Lbar[ii,ffp] \
+   + lamS3e[ff,ffp] Xmbar[sp].lR[sp,ff] YS3ebar[ffp] \
+   + lamS3L[ff,ffp] Xdbar[sp].LL[sp,ii,ff] YS3Lbar[ii,ffp] \
+   + lamS3e[ff,ffp] Xdbar[sp].lR[sp,ff] YS3ebar[ffp];
+
+  LIntF3 := \
+     lamF3L[ff,ffp] YF3Lbar[sp,ii,ffp].LL[sp2,ii,ff] (Xs IndexDelta[sp,sp2] + Xc IndexDelta[sp,sp2] + Xv[mu] Ga[mu,sp,sp2] + Xw[mu] Ga[mu,sp,sp2]) \
+   + lamF3e[ff,ffp] YF3ebar[sp,ffp].lR[sp2,ff] (Xs IndexDelta[sp,sp2] + Xc IndexDelta[sp,sp2] + Xv[mu] Ga[mu,sp,sp2] + Xw[mu] Ga[mu,sp,sp2]);
+
+LKinDM + LKinS3 + LKinF3 + LIntS3 + LIntF3 + HC[LIntS3] +HC[LIntF3]];
+
+
+

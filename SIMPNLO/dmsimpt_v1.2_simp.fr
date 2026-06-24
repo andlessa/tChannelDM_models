@@ -1,0 +1,120 @@
+(* ****************************************************************** *)
+(* *****                                                        ***** *)
+(* *****  FeynRules model file: Simplified DM models            ***** *)
+(* *****                                                        ***** *)
+(* *****  Author: Benjamin Fuks                                 ***** *)
+(* *****                                                        ***** *)
+(* ****************************************************************** *)
+
+(* ************************** *)
+(* *****  Information   ***** *)
+(* ************************** *)
+M$ModelName = "DMsimp_t_simp";
+
+M$Information = { Authors->{"Benjamin Fuks"}, Emails->{"fuks@lpthe.jussieu.fr"},
+                  Institutions->{"LPTHE / Sorbonne U."},
+                  Date->"29.10.19", Version->"1.2",
+                  URLs->"http://feynrules.irmp.ucl.ac.be/wiki/DMsimpt/"};
+
+(* ************************** *)
+(* *****  Change  log   ***** *)
+(* ************************** *)
+
+(* 2019.05.22 v1.0 - First version                       *)
+(* 2019.08.27 v1.1 - Changing a few PDG codes            *)
+(* 2019.10.29 v1.2 - Adding complex scalar and vector DM *)
+
+(* ************************** *)
+(* *** Interaction orders *** *)
+(* ************************** *)
+M$InteractionOrderLimit     = { {DMT, 2} };
+M$InteractionOrderHierarchy = { {QCD, 1}, {DMT, 2}, {QED, 2} };
+
+(* ************************** *)
+(* *****     Fields     ***** *)
+(* ************************** *)
+M$ClassesDescription = {
+  (* Dark matter *)
+  S[100] == { ClassName -> Xs, SelfConjugate -> True,
+              Mass -> {MXs, 11.}, Width -> 0, PDG -> 51},
+
+  (* Mediators *)
+  F[203] == { ClassName -> YF3u, SelfConjugate -> False,
+              Indices -> {Index[Generation],Index[Colour]}, FlavorIndex -> Generation,
+              ClassMembers -> {YF3u1, YF3u2, YF3u3},
+              QuantumNumbers -> {Y->2/3, Q->2/3}, PDG -> {5920002,5920004,5920006},
+              Mass  -> {MYF3u, {MYF3u1, 4000.}, {MYF3u2, 4001.}, {MYF3u3, 4002.}},
+              Width -> {WYF3u, {WYF3u1, 40.  }, {WYF3u2, 41.  }, {WYF3u3, 42.  }}},
+
+  F[204] == { ClassName -> YF3d, SelfConjugate -> False,
+              Indices -> {Index[Generation],Index[Colour]}, FlavorIndex -> Generation,
+              ClassMembers -> {YF3d1, YF3d2, YF3d3},
+              QuantumNumbers -> {Y->-1/3, Q->-1/3}, PDG -> {5920001,5920003,5920005},
+              Mass  -> {MYF3d, {MYF3d1, 4003.}, {MYF3d2, 4004.}, {MYF3d3, 4005.}},
+              Width -> {WYF3d, {WYF3d1, 43.  }, {WYF3d2, 44.  }, {WYF3d3, 45.  }}}
+
+};
+
+(* ************************** *)
+(* *****   Parameters   ***** *)
+(* ************************** *)
+M$Parameters = {
+
+ lamS3Q == { ParameterType -> External, ComplexParameter -> False,
+            TeX -> Subscript[\[Lambda],Q], BlockName -> DMS3Q,
+            Indices -> {Index[Generation], Index[Generation]},
+            InteractionOrder -> {DMT,1},
+            Definitions -> {lamS3Q[i_?NumericQ, j_?NumericQ] :> 0  /; (i=!=j)},
+            Value -> {lamS3Q[1,1] -> 0.10, lamS3Q[2,2] -> 0.11, lamS3Q[3,3] -> 0.12}},
+ lamS3u == { ParameterType -> External, ComplexParameter -> False,
+            TeX -> Subscript[\[Lambda],u], BlockName -> DMS3U,
+            Indices -> {Index[Generation], Index[Generation]},
+            InteractionOrder -> {DMT,1},
+            Definitions -> {lamS3u[i_?NumericQ, j_?NumericQ] :> 0  /; (i=!=j)},
+            Value -> {lamS3u[1,1] -> 0.13, lamS3u[2,2] -> 0.14, lamS3u[3,3] -> 0.15}},
+ lamS3d == { ParameterType -> External, ComplexParameter -> False,
+            TeX -> Subscript[\[Lambda],d], BlockName -> DMS3D,
+            Indices -> {Index[Generation], Index[Generation]},
+            InteractionOrder -> {DMT,1},
+            Definitions -> {lamS3d[i_?NumericQ, j_?NumericQ] :> 0  /; (i=!=j)},
+            Value -> {lamS3d[1,1] -> 0.16, lamS3d[2,2] -> 0.17, lamS3d[3,3] -> 0.18}},
+ lamF3Q == { ParameterType -> External, ComplexParameter -> False,
+            TeX -> Subscript[OverHat[\[Lambda]],Q], BlockName -> DMF3Q,
+            Indices -> {Index[Generation], Index[Generation]},
+            InteractionOrder -> {DMT,1},
+            Definitions -> {lamF3Q[i_?NumericQ, j_?NumericQ] :> 0  /; (i=!=j)},
+            Value -> {lamF3Q[1,1] -> 0.20, lamF3Q[2,2] -> 0.21, lamF3Q[3,3] -> 0.22}},
+ lamF3u == { ParameterType -> External, ComplexParameter -> False,
+            TeX -> Subscript[OverHat[\[Lambda]],u], BlockName -> DMF3U,
+            Indices -> {Index[Generation], Index[Generation]},
+            InteractionOrder -> {DMT,1},
+            Definitions -> {lamF3u[i_?NumericQ, j_?NumericQ] :> 0  /; (i=!=j)},
+            Value -> {lamF3u[1,1] -> 0.23, lamF3u[2,2] -> 0.24, lamF3u[3,3] -> 0.25}},
+ lamF3d == { ParameterType -> External, ComplexParameter -> False,
+            TeX -> Subscript[OverHat[\[Lambda]],d], BlockName -> DMF3D,
+            Indices -> {Index[Generation], Index[Generation]},
+            InteractionOrder -> {DMT,1},
+            Definitions -> {lamF3d[i_?NumericQ, j_?NumericQ] :> 0  /; (i=!=j)},
+            Value -> {lamF3d[1,1] -> 0.26, lamF3d[2,2] -> 0.27, lamF3d[3,3] -> 0.28}}
+};
+
+(* ************************** *)
+(* *****   Lagrangian   ***** *)
+(* ************************** *)
+
+LDMSIMPt := Block[{LKinDM, LKinF3, LIntF3, ii,ff,ffp,cc,mu,nu,sp,sp2},
+  LKinDM :=  \
+      1/2 del[Xs,mu]^2 - 1/2 MXs^2 Xs^2;
+
+
+  LKinF3 :=  \
+      Plus @@ (I anti[#].Ga[mu].DC[#,mu] &/@ { YF3u, YF3d } ) \
+    - MYF3u[ff] YF3ubar[sp,ff,cc].YF3u[sp,ff,cc] \
+    - MYF3d[ff] YF3dbar[sp,ff,cc].YF3d[sp,ff,cc];
+
+  LIntF3 := lamF3u[ff,ffp] YF3ubar[sp,ffp,cc].uR[sp2,ff,cc] Xs IndexDelta[sp,sp2] + lamF3d[ff,ffp] YF3dbar[sp,ffp,cc].dR[sp2,ff,cc] Xs IndexDelta[sp,sp2];
+
+LKinDM + LKinF3 + LIntF3 +HC[LIntF3]];
+
+
+
