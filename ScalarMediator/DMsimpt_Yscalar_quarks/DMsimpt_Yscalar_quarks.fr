@@ -1,0 +1,187 @@
+(*******************************************************************************)
+(*******************************************************************************)
+(****** t-channel Dark Matter Simplfied Model                             ******)
+(****** with a scalar Quark-like Mediator                                 ******)
+(******                                                                   ******)
+(****** Authors:  Andre Lessa                                             ******)
+(******                                                                   ******)
+(****** The model is a simplified version of the model defined here:      ******)
+(****** "https://feynrules.irmp.ucl.ac.be/wiki/DMsimpt"                   ******)
+(******  written by Benjamin Fuks                                         ******)
+(*******************************************************************************)
+(*******************************************************************************)
+
+M$ModelName = "DMsimpT_Yscalar_quarks";
+
+M$Information = {Authors -> {"Andre Lessa"}, 
+                 Version -> "1.1",
+                 Date -> "22.06.2026"
+                };
+FeynmanGauge = True;
+
+M$InteractionOrderHierarchy = {  {NP,  1}, {QCD, 1}, {QED, 2} };
+
+(* ************************** *)
+(* *****   Parameters   ***** *)
+(* ************************** *)
+
+M$Parameters = {
+
+ (* Internal parameters*)
+  muYSu2   == { 
+              TeX->Subscript[\[Mu],Yu],
+              ComplexParameter -> False, 
+              ParameterType->Internal, 
+              Value->MYu^2 - lamYuH vev^2/2,  
+              Description->"Up-type scalar Lagrangian mass parameter"
+            },
+  muYSd2   == { 
+              TeX->Subscript[\[Mu],Yd],
+              ComplexParameter -> False, 
+              ParameterType->Internal, 
+              Value->MYd^2 - lamYdH vev^2/2,  
+              Description->"Down-type scalar Lagrangian mass parameter"
+            },
+                                                                                                  
+ (* External NP parameters*)
+  yFqR  == { 
+              TeX->Subscript[y,YqR],
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->1.0, 
+              InteractionOrder->{NP ,1}, 
+              Description->"Dark scalar - heavy quark - 1st/2nd generation quarks Yukawa"
+            },
+
+  yFbR == { 
+              TeX->Subscript[y,YbR], 
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->1.0, 
+              InteractionOrder->{NP ,1}, 
+              Description->"Dark scalar - heavy quark - bottom quark Yukawa"
+            },
+
+  yFtR == { 
+              TeX->Subscript[y,YtR],
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->1.0, 
+              InteractionOrder->{NP ,1}, 
+              Description->"Dark scalar - heavy quark - top quark Yukawa"
+            },
+
+  lamYuH == { 
+              TeX->Subscript[\[Lambda],Yuh], 
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->0.02,
+              InteractionOrder->{NP ,1}, 
+              Description->"Up-type scalar - Higgs doublet coupling"
+            },
+
+  lamYdH == { 
+              TeX->Subscript[\[Lambda],Ydh], 
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->0.02,
+              InteractionOrder->{NP ,1}, 
+              Description->"Down-type scalar - Higgs doublet coupling"
+            },
+
+  lamYu  == { 
+              TeX->Subscript[\[Lambda],Yu],  
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->0.1,     
+              InteractionOrder->{NP, 1}, 
+              Description->"Up-type scalar quartic interaction"
+            },
+
+  lamYd  == { 
+              TeX->Subscript[\[Lambda],Yd],  
+              ComplexParameter -> False, 
+              ParameterType->External, 
+              Value->0.1,     
+              InteractionOrder->{NP, 1}, 
+              Description->"Down-type scalar quartic interaction"
+            }
+
+};
+
+(* ************************** *)
+(* **** Particle classes **** *)
+(* ************************** *)
+M$ClassesDescription = {
+
+
+(* The dark fermion *)
+F[100] == { 
+            ClassName -> Xm, 
+            SelfConjugate-> True,
+            Mass->{MX,  100.0},  
+            Width-> 0, 
+            ParticleName-> "Xm", 
+            PDG->52, 
+            PropagatorLabel->"Xm", 
+            PropagatorType->ScalarDash, 
+            ParticleName     -> {"Xm" },
+            FullName         -> {"Dark fermion"} 
+        },
+
+(* Heavy scalar (up-type) quark *)
+S[200] == { 
+            ClassName -> YSu, 
+            SelfConjugate -> False,
+            Indices -> {Index[Colour]}, 
+            QuantumNumbers -> {Q -> 2/3},
+            ParticleName     -> {"YSu"},
+            AntiParticleName -> {"YSu~"},
+            PDG -> {5910002},
+            Mass  -> {MYu, 500.0},
+            Width -> {WYu, 13.7},
+            FullName -> {"Up-type Scalar Mediator"}
+          },
+
+(* Heavy scalar (down-type) quark *)
+S[300] == { 
+            ClassName -> YSd, 
+            SelfConjugate -> False,
+            Indices -> {Index[Colour]}, 
+            QuantumNumbers -> {Q -> -1/3},
+            ParticleName     -> {"YSd"},
+            AntiParticleName -> {"YSd~"},
+            PDG -> {5910001},
+            Mass  -> {MYd, 500.0},
+            Width -> {WYd,13.7},
+            FullName -> {"Down-type Scalar Mediator"}
+          }                 
+};
+
+(* ************************** *)
+(* *****   Lagrangian   ***** *)
+(* ************************** *)
+
+LNP := Block[{LKinDM, LKinYF, LintF,LintXs,cc,ii,mu,sp,feynmangaugerules},
+
+    feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];  
+    LkinYS := DC[YSubar[cc],mu] DC[YSu[cc],mu] - muYSu2 YSubar*YSu
+             +DC[YSdbar[cc],mu] DC[YSd[cc],mu] - muYSd2 YSdbar*YSd;
+
+    LkinDM := I/2*Xmbar.Ga[mu].DC[Xm,mu] - 1/2 MX Xmbar.Xm;
+
+    LYukawaBSM := - yFqR*YSubar[cc]*(Xmbar[sp].uR[sp,1,cc] + Xmbar[sp].uR[sp,2,cc])
+                  - yFqR*YSdbar[cc]*(Xmbar[sp].dR[sp,1,cc] + Xmbar[sp].dR[sp,2,cc])
+                  - yFtR*YSubar[cc]*Xmbar[sp].uR[sp,3,cc]
+                  - yFbR*YSdbar[cc]*Xmbar[sp].dR[sp,3,cc];
+                  
+    LintF := LYukawaBSM + HC[LYukawaBSM];
+
+    LintYH :=  ExpandIndices[
+                              -(lamYu/4) (YSu*YSubar)^2 - lamYuH YSu*YSubar Phibar[ii] Phi[ii]
+                              -(lamYd/4) (YSd*YSdbar)^2 - lamYdH YSd*YSdbar Phibar[ii] Phi[ii], 
+                              FlavorExpand->{SU2D,SU2W}
+                            ]/.feynmangaugerules;
+
+    LkinDM + LintYH + LkinYS + LintF
+];
