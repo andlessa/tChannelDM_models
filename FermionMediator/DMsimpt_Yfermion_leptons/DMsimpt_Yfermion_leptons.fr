@@ -20,7 +20,7 @@ M$Information = {Authors -> {"Andre Lessa"},
                 };
 FeynmanGauge = True;
 
-M$InteractionOrderHierarchy = {  {NP,  1}, {QCD, 1}, {QED, 2} };
+M$InteractionOrderHierarchy = {  {QCD, 1}, {NP,  2}, {QED, 2} };
 
 (* ************************** *)
 (* *****   Parameters   ***** *)
