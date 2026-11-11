@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Fri 30 Oct 2026 18:09:07
+# Date: Wed 11 Nov 2026 15:26:29
 
 
 # 
@@ -59,15 +59,15 @@
 # Lorentz structure definitions
 #
 
-   * 45 lorentz structures written.
+   * 43 lorentz structures written.
    * lorentz.py written.
 #
 # Coupling definitions
 #
 
-   >>>> Non positive interaction order QED found for coupling GC_58.
    >>>> Non positive interaction order QED found for coupling GC_59.
-   * 85 couplings written.
+   >>>> Non positive interaction order QED found for coupling GC_60.
+   * 84 couplings written.
    * couplings.py written.
 #
 # Coupling order definitions
@@ -85,17 +85,15 @@
 # CTCoupling definitions
 #
 
-   >>>> Non positive interaction order QED found for coupling R2GC_206_74.
-   >>>> Non positive interaction order QED found for coupling R2GC_207_75.
-   >>>> Non positive interaction order QED found for coupling UVGC_206_165.
-   >>>> Non positive interaction order QED found for coupling UVGC_207_166.
-   >>>> Non positive interaction order QED found for coupling UVGC_208_167.
-   >>>> Non positive interaction order QED found for coupling UVGC_208_168.
-   * 249 CTcouplings written.
+   >>>> Non positive interaction order QED found for coupling R2GC_131_24.
+   >>>> Non positive interaction order QED found for coupling R2GC_134_25.
+   >>>> Non positive interaction order QED found for coupling UVGC_131_29.
+   >>>> Non positive interaction order QED found for coupling UVGC_134_31.
+   * 245 CTcouplings written.
    * CT_couplings.py written.
 #
 # CTVertex definitions
 #
 
-   * 128 CTvertices written.
+   * 124 CTvertices written.
    * CT_vertices.py written.

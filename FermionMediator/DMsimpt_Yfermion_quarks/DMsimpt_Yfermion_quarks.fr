@@ -50,7 +50,7 @@ M$Parameters = {
               TeX->Subscript[y,YbR], 
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->1.0, 
+              Value->0.0, 
               InteractionOrder->{NP ,1}, 
               Description->"Dark scalar - heavy quark - bottom quark Yukawa"
             },
@@ -59,7 +59,7 @@ M$Parameters = {
               TeX->Subscript[y,YtR],
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->1.0, 
+              Value->0.0, 
               InteractionOrder->{NP ,1}, 
               Description->"Dark scalar - heavy quark - top quark Yukawa"
             },
@@ -68,7 +68,7 @@ M$Parameters = {
               TeX->Subscript[\[Lambda],xsh], 
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->0.02,
+              Value->0.0,
               InteractionOrder->{NP ,1}, 
               Description->"Dark scalar - Higgs doublet coupling"
             },
@@ -77,7 +77,7 @@ M$Parameters = {
               TeX->Subscript[\[Lambda],xs],  
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->0.1,     
+              Value->0.0,     
               InteractionOrder->{NP, 1}, 
               Description->"Dark scalar quartic interaction"
             }
@@ -113,7 +113,7 @@ F[200] == {
             AntiParticleName -> {"YFu~"},
             PDG -> {5910002},
             Mass  -> {MYu, 500.0},
-            Width -> {WYu, 13.7},
+            Width -> {WYu, 9.2},
             FullName -> {"Up-type Mediator"}
           },
 
@@ -145,8 +145,8 @@ F[300] == {
             AntiParticleName -> {"YFd~"},
             PDG -> {5910001},
             Mass  -> {MYd, 500.0},
-            Width -> {WYd,13.7},
-            FullName -> {"Up-type Mediator"}
+            Width -> {WYd,9.2},
+            FullName -> {"Down-type Mediator"}
           },
 
 F[301] == { 

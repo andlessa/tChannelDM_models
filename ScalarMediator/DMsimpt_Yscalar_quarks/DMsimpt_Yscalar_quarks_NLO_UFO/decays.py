@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Fri 30 Oct 2026 18:09:54
+# Date: Wed 11 Nov 2026 15:27:10
 
 
 from object_library import all_decays, Decay
@@ -18,8 +18,8 @@ Decay_H = Decay(name = 'Decay_H',
                                   (P.t,P.t__tilde__):'((3*MH**2*yt**2 - 12*MT**2*yt**2)*cmath.sqrt(MH**4 - 4*MH**2*MT**2))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.ta__minus__,P.ta__plus__):'((MH**2*ytau**2 - 4*MTA**2*ytau**2)*cmath.sqrt(MH**4 - 4*MH**2*MTA**2))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.W__minus__,P.W__plus__):'(((3*ee**4*vev**2)/(4.*sw**4) + (ee**4*MH**4*vev**2)/(16.*MW**4*sw**4) - (ee**4*MH**2*vev**2)/(4.*MW**2*sw**4))*cmath.sqrt(MH**4 - 4*MH**2*MW**2))/(16.*cmath.pi*abs(MH)**3)',
-                                  (P.YSd__tilde__,P.YSd):'(lamYdH**2*vev**2*cmath.sqrt(MH**4 - 4*MH**2*MYd**2))/(16.*cmath.pi*abs(MH)**3)',
-                                  (P.YSu__tilde__,P.YSu):'(lamYuH**2*vev**2*cmath.sqrt(MH**4 - 4*MH**2*MYu**2))/(16.*cmath.pi*abs(MH)**3)',
+                                  (P.YSd__tilde__,P.YSd):'(3*lamYdH**2*vev**2*cmath.sqrt(MH**4 - 4*MH**2*MYd**2))/(16.*cmath.pi*abs(MH)**3)',
+                                  (P.YSu__tilde__,P.YSu):'(3*lamYuH**2*vev**2*cmath.sqrt(MH**4 - 4*MH**2*MYu**2))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.Z,P.Z):'(((9*ee**4*vev**2)/2. + (3*ee**4*MH**4*vev**2)/(8.*MZ**4) - (3*ee**4*MH**2*vev**2)/(2.*MZ**2) + (3*cw**4*ee**4*vev**2)/(4.*sw**4) + (cw**4*ee**4*MH**4*vev**2)/(16.*MZ**4*sw**4) - (cw**4*ee**4*MH**2*vev**2)/(4.*MZ**2*sw**4) + (3*cw**2*ee**4*vev**2)/sw**2 + (cw**2*ee**4*MH**4*vev**2)/(4.*MZ**4*sw**2) - (cw**2*ee**4*MH**2*vev**2)/(MZ**2*sw**2) + (3*ee**4*sw**2*vev**2)/cw**2 + (ee**4*MH**4*sw**2*vev**2)/(4.*cw**2*MZ**4) - (ee**4*MH**2*sw**2*vev**2)/(cw**2*MZ**2) + (3*ee**4*sw**4*vev**2)/(4.*cw**4) + (ee**4*MH**4*sw**4*vev**2)/(16.*cw**4*MZ**4) - (ee**4*MH**2*sw**4*vev**2)/(4.*cw**4*MZ**2))*cmath.sqrt(MH**4 - 4*MH**2*MZ**2))/(32.*cmath.pi*abs(MH)**3)'})
 
 Decay_t = Decay(name = 'Decay_t',

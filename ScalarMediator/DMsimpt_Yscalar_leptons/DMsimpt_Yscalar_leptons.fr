@@ -34,7 +34,7 @@ M$Parameters = {
               ComplexParameter -> False, 
               ParameterType->Internal, 
               Value->MY^2 - lamYH vev^2/2,  
-              Description->"Dark scalar Lagrangian mass parameter"
+              Description->"Scalar mediator Lagrangian mass parameter"
             },
                                                                                                   
  (* External NP parameters*)
@@ -42,7 +42,7 @@ M$Parameters = {
               TeX->Subscript[y,YeR],
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->10^(-7), 
+              Value->1.0, 
               InteractionOrder->{NP ,1}, 
               Description->"Dark fermion - scalar lepton - SM RH electron Yukawa"
             },
@@ -51,7 +51,7 @@ M$Parameters = {
               TeX->Subscript[y,YmuR], 
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->10^(-7), 
+              Value->0.0, 
               InteractionOrder->{NP ,1}, 
               Description->"Dark fermion - scalar lepton - SM RH muon Yukawa"
             },
@@ -60,7 +60,7 @@ M$Parameters = {
               TeX->Subscript[y,YtaR],
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->10^(-7), 
+              Value->0.0, 
               InteractionOrder->{NP ,1}, 
               Description->"Dark fermion - scalar lepton - SM RH tau Yukawa"
             },
@@ -69,7 +69,7 @@ M$Parameters = {
               TeX->Subscript[\[Lambda],YH], 
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->0.02,
+              Value->0.0,
               InteractionOrder->{NP ,1}, 
               Description->"Scalar lepton - Higgs doublet coupling"
             },
@@ -78,7 +78,7 @@ M$Parameters = {
               TeX->Subscript[\[Lambda],Y],  
               ComplexParameter -> False, 
               ParameterType->External, 
-              Value->0.1,     
+              Value->0.0,     
               InteractionOrder->{NP, 1}, 
               Description->"Scalar lepton quartic interaction"
             }
@@ -100,8 +100,7 @@ F[100] == {
             ParticleName-> "Xm", 
             PDG->52, 
             PropagatorLabel->"Xm", 
-            PropagatorType->ScalarDash, 
-            ParticleName     -> {"Xm" },
+            PropagatorType->Straight,
             FullName         -> {"Dark fermion"} 
         },
 
@@ -113,21 +112,31 @@ S[200] == {
             QuantumNumbers -> {Q -> -1, LeptonNumber -> 1},
             PDG -> {5920011},
             Mass  -> {MY, 500.0},
-            Width -> {WY, 1.375*10^(-13)}
-          }   
+            Width -> {WY, 9.2}
+          },
+(* Define a gauge state to assign hypercharge. In this case the gauge mass basis are the same *)
+S[201] == { 
+            ClassName -> YSeW, 
+            Unphysical -> True, 
+            Indices -> {}, 
+            SelfConjugate -> False,
+            QuantumNumbers -> {Y -> -1, LeptonNumber -> 1},
+            Definitions -> { YSeW -> YSe } 
+          }
+   
 };
 
 (* ************************** *)
 (* *****   Lagrangian   ***** *)
 (* ************************** *)
 
-LNP := Block[{LKinDM, LKinYS, LintF,LintXs, ii,mu,sp,feynmangaugerules},
+LNP := Block[{LKinDM, LKinYS, LintF, LintYH, ii,mu,sp,feynmangaugerules},
 
     feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];  
-    LkinYS := DC[YSebar,mu] DC[YSe,mu] - muYS2 YSebar*YSe;
+    LkinYS := DC[YSeWbar,mu] DC[YSeW,mu] - muYS2 YSebar*YSe;
     LkinDM := I/2*Xmbar.Ga[mu].DC[Xm,mu] - 1/2 MX Xmbar.Xm;
 
-    LYukawaBSM := - YSebar*(yFeR  Xmbar[sp].lR[sp,1] - yFmuR Xmbar[sp].lR[sp,2] - yFtaR Xmbar[sp].lR[sp,3]);
+    LYukawaBSM := - YSebar*(yFeR  Xmbar[sp].lR[sp,1] + yFmuR Xmbar[sp].lR[sp,2] + yFtaR Xmbar[sp].lR[sp,3]);
     LintF := LYukawaBSM + HC[LYukawaBSM];
 
     LintYH :=  ExpandIndices[

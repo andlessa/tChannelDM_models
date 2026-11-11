@@ -173,7 +173,7 @@ Cell[BoxData[{
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"LoadModel", "[", 
-   RowBox[{"\"\<./SM.fr\>\"", ",", "\"\<./DMsimpt-quarks.fr\>\""}], "]"}], 
+   RowBox[{"\"\<./SM.fr\>\"", ",", "\"\<./DMsimpt_Yfermion_quarks.fr\>\""}], "]"}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{"LoadRestriction", "[", 
   RowBox[{"\"\<./Massless.rst\>\"", ",", "\"\<./DiagonalCKM.rst\>\""}], 
@@ -1344,7 +1344,7 @@ Cell[BoxData[
   RowBox[{"WriteFeynArtsOutput", "[", 
    RowBox[{"Lren", ",", 
     RowBox[{"GenericFile", "\[Rule]", "False"}], ",", 
-    RowBox[{"Output", "\[Rule]", "\"\<DMsimpt_quarks_NLO_FA\>\""}]}], "]"}], 
+    RowBox[{"Output", "\[Rule]", "\"\<DMsimpt_Yfermion_quarks_NLO_FA\>\""}]}], "]"}], 
   ";"}]], "Input",
  CellChangeTimes->{{3.890834616754878*^9, 3.89083465123951*^9}, {
    3.890834692665996*^9, 3.890834706496573*^9}, {3.890834847158201*^9, 
@@ -3756,9 +3756,9 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{
   RowBox[{"WriteCT", "[", 
-   RowBox[{"\"\<./DMsimpt_quarks_NLO_FA/DMsimpt_quarks_NLO_FA\>\"", ",", 
+   RowBox[{"\"\<./DMsimpt_Yfermion_quarks_NLO_FA/DMsimpt_Yfermion_quarks_NLO_FA\>\"", ",", 
     RowBox[{"Exclude4ScalarsCT", "\[Rule]", "True"}], ",", 
-    RowBox[{"Output", "\[Rule]", " ", "\"\<./DMsimpt_quarks_NLO_FA_CT\>\""}], 
+    RowBox[{"Output", "\[Rule]", " ", "\"\<./DMsimpt_Yfermion_quarks_NLO_FA_CT\>\""}], 
     ",", 
     RowBox[{"Assumptions", "\[Rule]", 
      RowBox[{"{", 
@@ -7411,14 +7411,14 @@ Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{"LoadModel", "[", 
-   RowBox[{"\"\<./SM.fr\>\"", ",", "\"\<./DMsimpt-quarks.fr\>\""}], "]"}], 
+   RowBox[{"\"\<./SM.fr\>\"", ",", "\"\<./DMsimpt_Yfermion_quarks.fr\>\""}], "]"}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"LoadRestriction", "[", 
    RowBox[{"\"\<./Massless.rst\>\"", ",", "\"\<./DiagonalCKM.rst\>\""}], 
    "]"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Get", "[", "\"\<DMsimpt_quarks_NLO_FA_CT.nlo\>\"", "]"}], 
+  RowBox[{"Get", "[", "\"\<DMsimpt_Yfermion_quarks_NLO_FA_CT.nlo\>\"", "]"}], 
   ";"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.889275876456612*^9, 3.889275876633271*^9}, 
    3.8896051439037857`*^9, 3.8896081229727383`*^9, {3.889610755851712*^9, 
@@ -7643,7 +7643,7 @@ Cell[BoxData[
    RowBox[{"LSM", "+", "LNP"}], ",", 
    RowBox[{"UVCounterterms", "\[Rule]", "UV$vertlist"}], ",", 
    RowBox[{"R2Vertices", "\[Rule]", "R2$vertlist"}], ",", 
-   RowBox[{"Output", "->", "\"\<DMsimpt_quarks_NLO_UFO\>\""}]}], 
+   RowBox[{"Output", "->", "\"\<DMsimpt_Yfermion_quarks_NLO_UFO\>\""}]}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.95189152478193*^9, 3.9518915251231956`*^9}, {
    3.9519010807738743`*^9, 3.951901081425687*^9}, {3.9554243749173927`*^9, 

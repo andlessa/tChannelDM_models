@@ -273,7 +273,7 @@ Cell[BoxData[{
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"LoadModel", "[", 
-   RowBox[{"\"\<./SM.fr\>\"", ",", "\"\<./DMsimpt-leptons.fr\>\""}], "]"}], 
+   RowBox[{"\"\<./SM.fr\>\"", ",", "\"\<./DMsimpt_Yscalar_leptons.fr\>\""}], "]"}], 
   ";"}]}], "Input",
  CellChangeTimes->{{3.990782088857217*^9, 3.990782089549946*^9}, {
    3.990783389904213*^9, 3.990783391142743*^9}, 
@@ -1135,7 +1135,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"WriteUFO", "[", 
   RowBox[{"LSM", ",", "LNP", ",", 
-   RowBox[{"Output", "->", "\"\<DMsimpt_leptons_UFO\>\""}]}], "]"}]], "Input",\
+   RowBox[{"Output", "->", "\"\<DMsimpt_Yscalar_leptons_UFO\>\""}]}], "]"}]], "Input",\
 
  CellChangeTimes->{{3.515066451500599*^9, 3.51506645766863*^9}, {
    3.515066553825666*^9, 3.515066567557489*^9}, {3.517657052212844*^9, 
