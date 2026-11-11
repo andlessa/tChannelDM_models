@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Wed 11 Nov 2026 15:26:29
+# Date: Wed 11 Nov 2026 16:32:35
 
 
 # 
@@ -39,8 +39,8 @@
 
 # Vertices
    * Calling FeynmanRules for 1 Lagrangians.
-   * Number of classes vertices: 168
-   * Number of flavored vertices: 164
+   * Number of classes vertices: 182
+   * Number of flavored vertices: 178
    * Saved vertices in InterfaceRun[ 1 ].
    * Checked QNumber conservation.
       - Quantum number GhostNumber conserved in all vertices.
@@ -53,21 +53,21 @@
 # Vertex definitions
 #
 
-   * 145 vertices written.
+   * 159 vertices written.
    * vertices.py written.
 #
 # Lorentz structure definitions
 #
 
-   * 43 lorentz structures written.
+   * 46 lorentz structures written.
    * lorentz.py written.
 #
 # Coupling definitions
 #
 
-   >>>> Non positive interaction order QED found for coupling GC_59.
-   >>>> Non positive interaction order QED found for coupling GC_60.
-   * 84 couplings written.
+   >>>> Non positive interaction order QED found for coupling GC_69.
+   >>>> Non positive interaction order QED found for coupling GC_70.
+   * 96 couplings written.
    * couplings.py written.
 #
 # Coupling order definitions
@@ -85,15 +85,15 @@
 # CTCoupling definitions
 #
 
-   >>>> Non positive interaction order QED found for coupling R2GC_131_24.
-   >>>> Non positive interaction order QED found for coupling R2GC_134_25.
-   >>>> Non positive interaction order QED found for coupling UVGC_131_29.
-   >>>> Non positive interaction order QED found for coupling UVGC_134_31.
-   * 245 CTcouplings written.
+   >>>> Non positive interaction order QED found for coupling R2GC_156_49.
+   >>>> Non positive interaction order QED found for coupling R2GC_164_55.
+   >>>> Non positive interaction order QED found for coupling UVGC_156_32.
+   >>>> Non positive interaction order QED found for coupling UVGC_164_39.
+   * 298 CTcouplings written.
    * CT_couplings.py written.
 #
 # CTVertex definitions
 #
 
-   * 124 CTvertices written.
+   * 152 CTvertices written.
    * CT_vertices.py written.

@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Wed 11 Nov 2026 15:27:10
+# Date: Wed 11 Nov 2026 16:33:36
 
 
 
@@ -85,7 +85,7 @@ yFqR = Parameter(name = 'yFqR',
 yFbR = Parameter(name = 'yFbR',
                  nature = 'external',
                  type = 'real',
-                 value = 1.,
+                 value = 0.,
                  texname = 'y_{\\text{YbR}}',
                  lhablock = 'FRBlock',
                  lhacode = [ 2 ])
@@ -93,7 +93,7 @@ yFbR = Parameter(name = 'yFbR',
 yFtR = Parameter(name = 'yFtR',
                  nature = 'external',
                  type = 'real',
-                 value = 1.,
+                 value = 0.,
                  texname = 'y_{\\text{YtR}}',
                  lhablock = 'FRBlock',
                  lhacode = [ 3 ])
@@ -101,7 +101,7 @@ yFtR = Parameter(name = 'yFtR',
 lamYuH = Parameter(name = 'lamYuH',
                    nature = 'external',
                    type = 'real',
-                   value = 0.02,
+                   value = 0.,
                    texname = '\\lambda _{\\text{Yuh}}',
                    lhablock = 'FRBlock',
                    lhacode = [ 4 ])
@@ -109,7 +109,7 @@ lamYuH = Parameter(name = 'lamYuH',
 lamYdH = Parameter(name = 'lamYdH',
                    nature = 'external',
                    type = 'real',
-                   value = 0.02,
+                   value = 0.,
                    texname = '\\lambda _{\\text{Ydh}}',
                    lhablock = 'FRBlock',
                    lhacode = [ 5 ])
@@ -117,7 +117,7 @@ lamYdH = Parameter(name = 'lamYdH',
 lamYu = Parameter(name = 'lamYu',
                   nature = 'external',
                   type = 'real',
-                  value = 0.1,
+                  value = 0.,
                   texname = '\\lambda _{\\text{Yu}}',
                   lhablock = 'FRBlock',
                   lhacode = [ 6 ])
@@ -125,7 +125,7 @@ lamYu = Parameter(name = 'lamYu',
 lamYd = Parameter(name = 'lamYd',
                   nature = 'external',
                   type = 'real',
-                  value = 0.1,
+                  value = 0.,
                   texname = '\\lambda _{\\text{Yd}}',
                   lhablock = 'FRBlock',
                   lhacode = [ 7 ])
@@ -229,7 +229,7 @@ WH = Parameter(name = 'WH',
 WYu = Parameter(name = 'WYu',
                 nature = 'external',
                 type = 'real',
-                value = 13.7,
+                value = 18.3,
                 texname = '\\text{WYu}',
                 lhablock = 'DECAY',
                 lhacode = [ 5910002 ])
@@ -237,7 +237,7 @@ WYu = Parameter(name = 'WYu',
 WYd = Parameter(name = 'WYd',
                 nature = 'external',
                 type = 'real',
-                value = 13.7,
+                value = 18.3,
                 texname = '\\text{WYd}',
                 lhablock = 'DECAY',
                 lhacode = [ 5910001 ])

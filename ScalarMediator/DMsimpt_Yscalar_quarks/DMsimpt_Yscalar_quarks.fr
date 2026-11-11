@@ -173,7 +173,7 @@ S[301] == {
             SelfConjugate -> False,
             QuantumNumbers -> {Y -> -1/3},
             Definitions -> { YSdW -> YSd } 
-          },          
+          }
                            
 };
 

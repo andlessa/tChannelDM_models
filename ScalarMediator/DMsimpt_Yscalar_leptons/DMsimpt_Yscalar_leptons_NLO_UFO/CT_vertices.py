@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Wed 11 Nov 2026 15:19:21
+# Date: Wed 11 Nov 2026 16:28:10
 
 
 from object_library import all_vertices, all_CTvertices, Vertex, CTVertex
@@ -15,7 +15,7 @@ V_1 = CTVertex(name = 'V_1',
                color = [ 'f(1,2,3)' ],
                lorentz = [ L.VVV1, L.VVV2, L.VVV4, L.VVV6, L.VVV7, L.VVV8 ],
                loop_particles = [ [ [P.b], [P.c], [P.d], [P.s], [P.t], [P.u] ], [ [P.g] ] ],
-               couplings = {(0,0,0):C.R2GC_148_34,(0,0,1):C.R2GC_148_35,(0,1,0):C.R2GC_153_36,(0,1,1):C.R2GC_153_37,(0,2,0):C.R2GC_153_36,(0,2,1):C.R2GC_153_37,(0,3,0):C.R2GC_148_34,(0,3,1):C.R2GC_148_35,(0,4,0):C.R2GC_148_34,(0,4,1):C.R2GC_148_35,(0,5,0):C.R2GC_153_36,(0,5,1):C.R2GC_153_37})
+               couplings = {(0,0,0):C.R2GC_151_40,(0,0,1):C.R2GC_151_41,(0,1,0):C.R2GC_156_42,(0,1,1):C.R2GC_156_43,(0,2,0):C.R2GC_156_42,(0,2,1):C.R2GC_156_43,(0,3,0):C.R2GC_151_40,(0,3,1):C.R2GC_151_41,(0,4,0):C.R2GC_151_40,(0,4,1):C.R2GC_151_41,(0,5,0):C.R2GC_156_42,(0,5,1):C.R2GC_156_43})
 
 V_2 = CTVertex(name = 'V_2',
                type = 'R2',
@@ -23,7 +23,7 @@ V_2 = CTVertex(name = 'V_2',
                color = [ 'd(-1,1,3)*d(-1,2,4)', 'd(-1,1,3)*f(-1,2,4)', 'd(-1,1,4)*d(-1,2,3)', 'd(-1,1,4)*f(-1,2,3)', 'd(-1,2,3)*f(-1,1,4)', 'd(-1,2,4)*f(-1,1,3)', 'f(-1,1,2)*f(-1,3,4)', 'f(-1,1,3)*f(-1,2,4)', 'f(-1,1,4)*f(-1,2,3)', 'Identity(1,2)*Identity(3,4)', 'Identity(1,3)*Identity(2,4)', 'Identity(1,4)*Identity(2,3)' ],
                lorentz = [ L.VVVV2, L.VVVV3, L.VVVV4 ],
                loop_particles = [ [ [P.b], [P.c], [P.d], [P.s], [P.t], [P.u] ], [ [P.g] ] ],
-               couplings = {(2,0,0):C.R2GC_124_13,(2,0,1):C.R2GC_124_14,(0,0,0):C.R2GC_124_13,(0,0,1):C.R2GC_124_14,(4,0,0):C.R2GC_122_9,(4,0,1):C.R2GC_122_10,(3,0,0):C.R2GC_122_9,(3,0,1):C.R2GC_122_10,(8,0,0):C.R2GC_123_11,(8,0,1):C.R2GC_123_12,(6,0,0):C.R2GC_127_18,(6,0,1):C.R2GC_160_43,(7,0,0):C.R2GC_128_20,(7,0,1):C.R2GC_159_42,(5,0,0):C.R2GC_122_9,(5,0,1):C.R2GC_122_10,(1,0,0):C.R2GC_122_9,(1,0,1):C.R2GC_122_10,(11,0,0):C.R2GC_126_16,(11,0,1):C.R2GC_126_17,(10,0,0):C.R2GC_126_16,(10,0,1):C.R2GC_126_17,(9,0,1):C.R2GC_125_15,(2,1,0):C.R2GC_124_13,(2,1,1):C.R2GC_124_14,(0,1,0):C.R2GC_124_13,(0,1,1):C.R2GC_124_14,(4,1,0):C.R2GC_122_9,(4,1,1):C.R2GC_122_10,(3,1,0):C.R2GC_122_9,(3,1,1):C.R2GC_122_10,(8,1,0):C.R2GC_123_11,(8,1,1):C.R2GC_161_44,(6,1,0):C.R2GC_156_38,(6,1,1):C.R2GC_156_39,(7,1,0):C.R2GC_128_20,(7,1,1):C.R2GC_128_21,(5,1,0):C.R2GC_122_9,(5,1,1):C.R2GC_122_10,(1,1,0):C.R2GC_122_9,(1,1,1):C.R2GC_122_10,(11,1,0):C.R2GC_126_16,(11,1,1):C.R2GC_126_17,(10,1,0):C.R2GC_126_16,(10,1,1):C.R2GC_126_17,(9,1,1):C.R2GC_125_15,(0,2,0):C.R2GC_124_13,(0,2,1):C.R2GC_124_14,(2,2,0):C.R2GC_124_13,(2,2,1):C.R2GC_124_14,(5,2,0):C.R2GC_122_9,(5,2,1):C.R2GC_122_10,(1,2,0):C.R2GC_122_9,(1,2,1):C.R2GC_122_10,(7,2,0):C.R2GC_157_40,(7,2,1):C.R2GC_124_14,(4,2,0):C.R2GC_122_9,(4,2,1):C.R2GC_122_10,(3,2,0):C.R2GC_122_9,(3,2,1):C.R2GC_122_10,(8,2,0):C.R2GC_123_11,(8,2,1):C.R2GC_158_41,(6,2,0):C.R2GC_127_18,(6,2,1):C.R2GC_127_19,(11,2,0):C.R2GC_126_16,(11,2,1):C.R2GC_126_17,(10,2,0):C.R2GC_126_16,(10,2,1):C.R2GC_126_17,(9,2,1):C.R2GC_125_15})
+               couplings = {(2,0,0):C.R2GC_127_19,(2,0,1):C.R2GC_127_20,(0,0,0):C.R2GC_127_19,(0,0,1):C.R2GC_127_20,(4,0,0):C.R2GC_125_15,(4,0,1):C.R2GC_125_16,(3,0,0):C.R2GC_125_15,(3,0,1):C.R2GC_125_16,(8,0,0):C.R2GC_126_17,(8,0,1):C.R2GC_126_18,(6,0,0):C.R2GC_130_24,(6,0,1):C.R2GC_163_49,(7,0,0):C.R2GC_131_26,(7,0,1):C.R2GC_162_48,(5,0,0):C.R2GC_125_15,(5,0,1):C.R2GC_125_16,(1,0,0):C.R2GC_125_15,(1,0,1):C.R2GC_125_16,(11,0,0):C.R2GC_129_22,(11,0,1):C.R2GC_129_23,(10,0,0):C.R2GC_129_22,(10,0,1):C.R2GC_129_23,(9,0,1):C.R2GC_128_21,(2,1,0):C.R2GC_127_19,(2,1,1):C.R2GC_127_20,(0,1,0):C.R2GC_127_19,(0,1,1):C.R2GC_127_20,(4,1,0):C.R2GC_125_15,(4,1,1):C.R2GC_125_16,(3,1,0):C.R2GC_125_15,(3,1,1):C.R2GC_125_16,(8,1,0):C.R2GC_126_17,(8,1,1):C.R2GC_164_50,(6,1,0):C.R2GC_159_44,(6,1,1):C.R2GC_159_45,(7,1,0):C.R2GC_131_26,(7,1,1):C.R2GC_131_27,(5,1,0):C.R2GC_125_15,(5,1,1):C.R2GC_125_16,(1,1,0):C.R2GC_125_15,(1,1,1):C.R2GC_125_16,(11,1,0):C.R2GC_129_22,(11,1,1):C.R2GC_129_23,(10,1,0):C.R2GC_129_22,(10,1,1):C.R2GC_129_23,(9,1,1):C.R2GC_128_21,(0,2,0):C.R2GC_127_19,(0,2,1):C.R2GC_127_20,(2,2,0):C.R2GC_127_19,(2,2,1):C.R2GC_127_20,(5,2,0):C.R2GC_125_15,(5,2,1):C.R2GC_125_16,(1,2,0):C.R2GC_125_15,(1,2,1):C.R2GC_125_16,(7,2,0):C.R2GC_160_46,(7,2,1):C.R2GC_127_20,(4,2,0):C.R2GC_125_15,(4,2,1):C.R2GC_125_16,(3,2,0):C.R2GC_125_15,(3,2,1):C.R2GC_125_16,(8,2,0):C.R2GC_126_17,(8,2,1):C.R2GC_161_47,(6,2,0):C.R2GC_130_24,(6,2,1):C.R2GC_130_25,(11,2,0):C.R2GC_129_22,(11,2,1):C.R2GC_129_23,(10,2,0):C.R2GC_129_22,(10,2,1):C.R2GC_129_23,(9,2,1):C.R2GC_128_21})
 
 V_3 = CTVertex(name = 'V_3',
                type = 'R2',
@@ -31,7 +31,7 @@ V_3 = CTVertex(name = 'V_3',
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS3, L.FFS4 ],
                loop_particles = [ [ [P.b, P.g, P.t] ] ],
-               couplings = {(0,0,0):C.R2GC_170_48,(0,1,0):C.R2GC_171_49})
+               couplings = {(0,0,0):C.R2GC_173_54,(0,1,0):C.R2GC_174_55})
 
 V_4 = CTVertex(name = 'V_4',
                type = 'R2',
@@ -39,7 +39,7 @@ V_4 = CTVertex(name = 'V_4',
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1 ],
                loop_particles = [ [ [P.b, P.g] ] ],
-               couplings = {(0,0,0):C.R2GC_145_30})
+               couplings = {(0,0,0):C.R2GC_148_36})
 
 V_5 = CTVertex(name = 'V_5',
                type = 'R2',
@@ -47,7 +47,7 @@ V_5 = CTVertex(name = 'V_5',
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS2 ],
                loop_particles = [ [ [P.b, P.g] ] ],
-               couplings = {(0,0,0):C.R2GC_144_29})
+               couplings = {(0,0,0):C.R2GC_147_35})
 
 V_6 = CTVertex(name = 'V_6',
                type = 'R2',
@@ -55,7 +55,7 @@ V_6 = CTVertex(name = 'V_6',
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS3, L.FFS4 ],
                loop_particles = [ [ [P.b, P.g, P.t] ] ],
-               couplings = {(0,0,0):C.R2GC_172_50,(0,1,0):C.R2GC_169_47})
+               couplings = {(0,0,0):C.R2GC_175_56,(0,1,0):C.R2GC_172_53})
 
 V_7 = CTVertex(name = 'V_7',
                type = 'R2',
@@ -63,7 +63,7 @@ V_7 = CTVertex(name = 'V_7',
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1 ],
                loop_particles = [ [ [P.g, P.t] ] ],
-               couplings = {(0,0,0):C.R2GC_173_51})
+               couplings = {(0,0,0):C.R2GC_176_57})
 
 V_8 = CTVertex(name = 'V_8',
                type = 'R2',
@@ -71,7 +71,7 @@ V_8 = CTVertex(name = 'V_8',
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS2 ],
                loop_particles = [ [ [P.g, P.t] ] ],
-               couplings = {(0,0,0):C.R2GC_174_52})
+               couplings = {(0,0,0):C.R2GC_177_58})
 
 V_9 = CTVertex(name = 'V_9',
                type = 'R2',
@@ -79,7 +79,7 @@ V_9 = CTVertex(name = 'V_9',
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFV1 ],
                loop_particles = [ [ [P.g, P.u] ] ],
-               couplings = {(0,0,0):C.R2GC_134_25})
+               couplings = {(0,0,0):C.R2GC_137_31})
 
 V_10 = CTVertex(name = 'V_10',
                 type = 'R2',
@@ -87,7 +87,7 @@ V_10 = CTVertex(name = 'V_10',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.c, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_134_25})
+                couplings = {(0,0,0):C.R2GC_137_31})
 
 V_11 = CTVertex(name = 'V_11',
                 type = 'R2',
@@ -95,7 +95,7 @@ V_11 = CTVertex(name = 'V_11',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.R2GC_134_25})
+                couplings = {(0,0,0):C.R2GC_137_31})
 
 V_12 = CTVertex(name = 'V_12',
                 type = 'R2',
@@ -103,7 +103,7 @@ V_12 = CTVertex(name = 'V_12',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.d, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_129_22})
+                couplings = {(0,0,0):C.R2GC_132_28})
 
 V_13 = CTVertex(name = 'V_13',
                 type = 'R2',
@@ -111,7 +111,7 @@ V_13 = CTVertex(name = 'V_13',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.g, P.s] ] ],
-                couplings = {(0,0,0):C.R2GC_129_22})
+                couplings = {(0,0,0):C.R2GC_132_28})
 
 V_14 = CTVertex(name = 'V_14',
                 type = 'R2',
@@ -119,7 +119,7 @@ V_14 = CTVertex(name = 'V_14',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.b, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_129_22})
+                couplings = {(0,0,0):C.R2GC_132_28})
 
 V_15 = CTVertex(name = 'V_15',
                 type = 'R2',
@@ -127,7 +127,7 @@ V_15 = CTVertex(name = 'V_15',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.g, P.u] ] ],
-                couplings = {(0,0,0):C.R2GC_130_23})
+                couplings = {(0,0,0):C.R2GC_133_29})
 
 V_16 = CTVertex(name = 'V_16',
                 type = 'R2',
@@ -135,7 +135,7 @@ V_16 = CTVertex(name = 'V_16',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.c, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_130_23})
+                couplings = {(0,0,0):C.R2GC_133_29})
 
 V_17 = CTVertex(name = 'V_17',
                 type = 'R2',
@@ -143,7 +143,7 @@ V_17 = CTVertex(name = 'V_17',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.R2GC_130_23})
+                couplings = {(0,0,0):C.R2GC_133_29})
 
 V_18 = CTVertex(name = 'V_18',
                 type = 'R2',
@@ -151,7 +151,7 @@ V_18 = CTVertex(name = 'V_18',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.d, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_130_23})
+                couplings = {(0,0,0):C.R2GC_133_29})
 
 V_19 = CTVertex(name = 'V_19',
                 type = 'R2',
@@ -159,7 +159,7 @@ V_19 = CTVertex(name = 'V_19',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.g, P.s] ] ],
-                couplings = {(0,0,0):C.R2GC_130_23})
+                couplings = {(0,0,0):C.R2GC_133_29})
 
 V_20 = CTVertex(name = 'V_20',
                 type = 'R2',
@@ -167,7 +167,7 @@ V_20 = CTVertex(name = 'V_20',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV1 ],
                 loop_particles = [ [ [P.b, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_130_23})
+                couplings = {(0,0,0):C.R2GC_133_29})
 
 V_21 = CTVertex(name = 'V_21',
                 type = 'R2',
@@ -175,7 +175,7 @@ V_21 = CTVertex(name = 'V_21',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.d, P.g, P.u] ] ],
-                couplings = {(0,0,0):C.R2GC_137_26})
+                couplings = {(0,0,0):C.R2GC_140_32})
 
 V_22 = CTVertex(name = 'V_22',
                 type = 'R2',
@@ -183,7 +183,7 @@ V_22 = CTVertex(name = 'V_22',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.c, P.g, P.s] ] ],
-                couplings = {(0,0,0):C.R2GC_137_26})
+                couplings = {(0,0,0):C.R2GC_140_32})
 
 V_23 = CTVertex(name = 'V_23',
                 type = 'R2',
@@ -191,7 +191,7 @@ V_23 = CTVertex(name = 'V_23',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.b, P.g, P.t] ] ],
-                couplings = {(0,0,0):C.R2GC_137_26})
+                couplings = {(0,0,0):C.R2GC_140_32})
 
 V_24 = CTVertex(name = 'V_24',
                 type = 'R2',
@@ -199,7 +199,7 @@ V_24 = CTVertex(name = 'V_24',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.d, P.g, P.u] ] ],
-                couplings = {(0,0,0):C.R2GC_137_26})
+                couplings = {(0,0,0):C.R2GC_140_32})
 
 V_25 = CTVertex(name = 'V_25',
                 type = 'R2',
@@ -207,7 +207,7 @@ V_25 = CTVertex(name = 'V_25',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.c, P.g, P.s] ] ],
-                couplings = {(0,0,0):C.R2GC_137_26})
+                couplings = {(0,0,0):C.R2GC_140_32})
 
 V_26 = CTVertex(name = 'V_26',
                 type = 'R2',
@@ -215,7 +215,7 @@ V_26 = CTVertex(name = 'V_26',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.b, P.g, P.t] ] ],
-                couplings = {(0,0,0):C.R2GC_137_26})
+                couplings = {(0,0,0):C.R2GC_140_32})
 
 V_27 = CTVertex(name = 'V_27',
                 type = 'R2',
@@ -223,7 +223,7 @@ V_27 = CTVertex(name = 'V_27',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2, L.FFV3 ],
                 loop_particles = [ [ [P.g, P.u] ] ],
-                couplings = {(0,0,0):C.R2GC_102_5,(0,1,0):C.R2GC_168_46})
+                couplings = {(0,0,0):C.R2GC_105_11,(0,1,0):C.R2GC_171_52})
 
 V_28 = CTVertex(name = 'V_28',
                 type = 'R2',
@@ -231,7 +231,7 @@ V_28 = CTVertex(name = 'V_28',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2, L.FFV3 ],
                 loop_particles = [ [ [P.c, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_102_5,(0,1,0):C.R2GC_168_46})
+                couplings = {(0,0,0):C.R2GC_105_11,(0,1,0):C.R2GC_171_52})
 
 V_29 = CTVertex(name = 'V_29',
                 type = 'R2',
@@ -239,7 +239,7 @@ V_29 = CTVertex(name = 'V_29',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2, L.FFV3 ],
                 loop_particles = [ [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.R2GC_102_5,(0,1,0):C.R2GC_168_46})
+                couplings = {(0,0,0):C.R2GC_105_11,(0,1,0):C.R2GC_171_52})
 
 V_30 = CTVertex(name = 'V_30',
                 type = 'R2',
@@ -247,7 +247,7 @@ V_30 = CTVertex(name = 'V_30',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2, L.FFV3 ],
                 loop_particles = [ [ [P.d, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_103_6,(0,1,0):C.R2GC_143_28})
+                couplings = {(0,0,0):C.R2GC_106_12,(0,1,0):C.R2GC_146_34})
 
 V_31 = CTVertex(name = 'V_31',
                 type = 'R2',
@@ -255,7 +255,7 @@ V_31 = CTVertex(name = 'V_31',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2, L.FFV3 ],
                 loop_particles = [ [ [P.g, P.s] ] ],
-                couplings = {(0,0,0):C.R2GC_103_6,(0,1,0):C.R2GC_143_28})
+                couplings = {(0,0,0):C.R2GC_106_12,(0,1,0):C.R2GC_146_34})
 
 V_32 = CTVertex(name = 'V_32',
                 type = 'R2',
@@ -263,7 +263,7 @@ V_32 = CTVertex(name = 'V_32',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2, L.FFV3 ],
                 loop_particles = [ [ [P.b, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_103_6,(0,1,0):C.R2GC_143_28})
+                couplings = {(0,0,0):C.R2GC_106_12,(0,1,0):C.R2GC_146_34})
 
 V_33 = CTVertex(name = 'V_33',
                 type = 'R2',
@@ -271,7 +271,7 @@ V_33 = CTVertex(name = 'V_33',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF1 ],
                 loop_particles = [ [ [P.g, P.u] ] ],
-                couplings = {(0,0,0):C.R2GC_131_24})
+                couplings = {(0,0,0):C.R2GC_134_30})
 
 V_34 = CTVertex(name = 'V_34',
                 type = 'R2',
@@ -279,7 +279,7 @@ V_34 = CTVertex(name = 'V_34',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF1 ],
                 loop_particles = [ [ [P.c, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_131_24})
+                couplings = {(0,0,0):C.R2GC_134_30})
 
 V_35 = CTVertex(name = 'V_35',
                 type = 'R2',
@@ -287,7 +287,7 @@ V_35 = CTVertex(name = 'V_35',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF2, L.FF3, L.FF4, L.FF5 ],
                 loop_particles = [ [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.R2GC_165_45,(0,2,0):C.R2GC_165_45,(0,1,0):C.R2GC_131_24,(0,3,0):C.R2GC_131_24})
+                couplings = {(0,0,0):C.R2GC_168_51,(0,2,0):C.R2GC_168_51,(0,1,0):C.R2GC_134_30,(0,3,0):C.R2GC_134_30})
 
 V_36 = CTVertex(name = 'V_36',
                 type = 'R2',
@@ -295,7 +295,7 @@ V_36 = CTVertex(name = 'V_36',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF1 ],
                 loop_particles = [ [ [P.d, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_131_24})
+                couplings = {(0,0,0):C.R2GC_134_30})
 
 V_37 = CTVertex(name = 'V_37',
                 type = 'R2',
@@ -303,7 +303,7 @@ V_37 = CTVertex(name = 'V_37',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF1 ],
                 loop_particles = [ [ [P.g, P.s] ] ],
-                couplings = {(0,0,0):C.R2GC_131_24})
+                couplings = {(0,0,0):C.R2GC_134_30})
 
 V_38 = CTVertex(name = 'V_38',
                 type = 'R2',
@@ -311,7 +311,7 @@ V_38 = CTVertex(name = 'V_38',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF2, L.FF3, L.FF4, L.FF5 ],
                 loop_particles = [ [ [P.b, P.g] ] ],
-                couplings = {(0,0,0):C.R2GC_141_27,(0,2,0):C.R2GC_141_27,(0,1,0):C.R2GC_131_24,(0,3,0):C.R2GC_131_24})
+                couplings = {(0,0,0):C.R2GC_144_33,(0,2,0):C.R2GC_144_33,(0,1,0):C.R2GC_134_30,(0,3,0):C.R2GC_134_30})
 
 V_39 = CTVertex(name = 'V_39',
                 type = 'R2',
@@ -319,7 +319,7 @@ V_39 = CTVertex(name = 'V_39',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.VV1, L.VV2, L.VV3 ],
                 loop_particles = [ [ [P.b] ], [ [P.b], [P.c], [P.d], [P.s], [P.t], [P.u] ], [ [P.g] ], [ [P.t] ] ],
-                couplings = {(0,0,2):C.R2GC_147_33,(0,1,0):C.R2GC_93_53,(0,1,3):C.R2GC_93_54,(0,2,1):C.R2GC_146_31,(0,2,2):C.R2GC_146_32})
+                couplings = {(0,0,2):C.R2GC_150_39,(0,1,0):C.R2GC_96_59,(0,1,3):C.R2GC_96_60,(0,2,1):C.R2GC_149_37,(0,2,2):C.R2GC_149_38})
 
 V_40 = CTVertex(name = 'V_40',
                 type = 'R2',
@@ -327,7 +327,7 @@ V_40 = CTVertex(name = 'V_40',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.VVS1 ],
                 loop_particles = [ [ [P.b] ], [ [P.t] ] ],
-                couplings = {(0,0,0):C.R2GC_94_55,(0,0,1):C.R2GC_94_56})
+                couplings = {(0,0,0):C.R2GC_97_61,(0,0,1):C.R2GC_97_62})
 
 V_41 = CTVertex(name = 'V_41',
                 type = 'R2',
@@ -335,7 +335,7 @@ V_41 = CTVertex(name = 'V_41',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.VVVV2, L.VVVV3, L.VVVV4 ],
                 loop_particles = [ [ [P.b, P.t], [P.c, P.s], [P.d, P.u] ] ],
-                couplings = {(0,0,0):C.R2GC_106_8,(0,1,0):C.R2GC_106_8,(0,2,0):C.R2GC_106_8})
+                couplings = {(0,0,0):C.R2GC_109_14,(0,1,0):C.R2GC_109_14,(0,2,0):C.R2GC_109_14})
 
 V_42 = CTVertex(name = 'V_42',
                 type = 'R2',
@@ -343,7 +343,7 @@ V_42 = CTVertex(name = 'V_42',
                 color = [ 'Identity(2,3)' ],
                 lorentz = [ L.VVVV2, L.VVVV3, L.VVVV4 ],
                 loop_particles = [ [ [P.b], [P.d], [P.s] ], [ [P.c], [P.t], [P.u] ] ],
-                couplings = {(0,0,0):C.R2GC_98_63,(0,0,1):C.R2GC_98_64,(0,1,0):C.R2GC_98_63,(0,1,1):C.R2GC_98_64,(0,2,0):C.R2GC_98_63,(0,2,1):C.R2GC_98_64})
+                couplings = {(0,0,0):C.R2GC_101_3,(0,0,1):C.R2GC_101_4,(0,1,0):C.R2GC_101_3,(0,1,1):C.R2GC_101_4,(0,2,0):C.R2GC_101_3,(0,2,1):C.R2GC_101_4})
 
 V_43 = CTVertex(name = 'V_43',
                 type = 'R2',
@@ -351,7 +351,7 @@ V_43 = CTVertex(name = 'V_43',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.VVVV2, L.VVVV3, L.VVVV4 ],
                 loop_particles = [ [ [P.b], [P.d], [P.s] ], [ [P.c], [P.t], [P.u] ] ],
-                couplings = {(0,0,0):C.R2GC_101_3,(0,0,1):C.R2GC_101_4,(0,1,0):C.R2GC_101_3,(0,1,1):C.R2GC_101_4,(0,2,0):C.R2GC_101_3,(0,2,1):C.R2GC_101_4})
+                couplings = {(0,0,0):C.R2GC_104_9,(0,0,1):C.R2GC_104_10,(0,1,0):C.R2GC_104_9,(0,1,1):C.R2GC_104_10,(0,2,0):C.R2GC_104_9,(0,2,1):C.R2GC_104_10})
 
 V_44 = CTVertex(name = 'V_44',
                 type = 'R2',
@@ -359,7 +359,7 @@ V_44 = CTVertex(name = 'V_44',
                 color = [ 'Identity(3,4)' ],
                 lorentz = [ L.VVVV2, L.VVVV3, L.VVVV4 ],
                 loop_particles = [ [ [P.b], [P.d], [P.s] ], [ [P.c], [P.t], [P.u] ] ],
-                couplings = {(0,0,0):C.R2GC_96_59,(0,0,1):C.R2GC_96_60,(0,1,0):C.R2GC_96_59,(0,1,1):C.R2GC_96_60,(0,2,0):C.R2GC_96_59,(0,2,1):C.R2GC_96_60})
+                couplings = {(0,0,0):C.R2GC_99_65,(0,0,1):C.R2GC_99_66,(0,1,0):C.R2GC_99_65,(0,1,1):C.R2GC_99_66,(0,2,0):C.R2GC_99_65,(0,2,1):C.R2GC_99_66})
 
 V_45 = CTVertex(name = 'V_45',
                 type = 'R2',
@@ -367,7 +367,7 @@ V_45 = CTVertex(name = 'V_45',
                 color = [ 'd(1,2,3)', 'f(1,2,3)' ],
                 lorentz = [ L.VVVV1, L.VVVV2, L.VVVV3, L.VVVV4 ],
                 loop_particles = [ [ [P.b], [P.d], [P.s] ], [ [P.c], [P.t], [P.u] ] ],
-                couplings = {(1,0,0):C.R2GC_100_1,(1,0,1):C.R2GC_100_2,(0,1,0):C.R2GC_99_65,(0,1,1):C.R2GC_99_66,(0,2,0):C.R2GC_99_65,(0,2,1):C.R2GC_99_66,(0,3,0):C.R2GC_99_65,(0,3,1):C.R2GC_99_66})
+                couplings = {(1,0,0):C.R2GC_103_7,(1,0,1):C.R2GC_103_8,(0,1,0):C.R2GC_102_5,(0,1,1):C.R2GC_102_6,(0,2,0):C.R2GC_102_5,(0,2,1):C.R2GC_102_6,(0,3,0):C.R2GC_102_5,(0,3,1):C.R2GC_102_6})
 
 V_46 = CTVertex(name = 'V_46',
                 type = 'R2',
@@ -375,7 +375,7 @@ V_46 = CTVertex(name = 'V_46',
                 color = [ 'd(2,3,4)' ],
                 lorentz = [ L.VVVV2, L.VVVV3, L.VVVV4 ],
                 loop_particles = [ [ [P.b], [P.d], [P.s] ], [ [P.c], [P.t], [P.u] ] ],
-                couplings = {(0,0,0):C.R2GC_97_61,(0,0,1):C.R2GC_97_62,(0,1,0):C.R2GC_97_61,(0,1,1):C.R2GC_97_62,(0,2,0):C.R2GC_97_61,(0,2,1):C.R2GC_97_62})
+                couplings = {(0,0,0):C.R2GC_100_1,(0,0,1):C.R2GC_100_2,(0,1,0):C.R2GC_100_1,(0,1,1):C.R2GC_100_2,(0,2,0):C.R2GC_100_1,(0,2,1):C.R2GC_100_2})
 
 V_47 = CTVertex(name = 'V_47',
                 type = 'R2',
@@ -383,7 +383,7 @@ V_47 = CTVertex(name = 'V_47',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.VVSS1 ],
                 loop_particles = [ [ [P.b] ], [ [P.t] ] ],
-                couplings = {(0,0,0):C.R2GC_95_57,(0,0,1):C.R2GC_95_58})
+                couplings = {(0,0,0):C.R2GC_98_63,(0,0,1):C.R2GC_98_64})
 
 V_48 = CTVertex(name = 'V_48',
                 type = 'R2',
@@ -391,7 +391,7 @@ V_48 = CTVertex(name = 'V_48',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.VVSS1 ],
                 loop_particles = [ [ [P.b] ], [ [P.t] ] ],
-                couplings = {(0,0,0):C.R2GC_95_57,(0,0,1):C.R2GC_95_58})
+                couplings = {(0,0,0):C.R2GC_98_63,(0,0,1):C.R2GC_98_64})
 
 V_49 = CTVertex(name = 'V_49',
                 type = 'R2',
@@ -399,7 +399,7 @@ V_49 = CTVertex(name = 'V_49',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.VVSS1 ],
                 loop_particles = [ [ [P.b, P.t] ] ],
-                couplings = {(0,0,0):C.R2GC_105_7})
+                couplings = {(0,0,0):C.R2GC_108_13})
 
 V_50 = CTVertex(name = 'V_50',
                 type = 'UV',
@@ -407,7 +407,7 @@ V_50 = CTVertex(name = 'V_50',
                 color = [ 'f(1,2,3)' ],
                 lorentz = [ L.VVV1, L.VVV2, L.VVV3, L.VVV4, L.VVV5, L.VVV6, L.VVV7, L.VVV8 ],
                 loop_particles = [ [ [P.b] ], [ [P.c], [P.d], [P.s], [P.u] ], [ [P.g] ], [ [P.ghG] ], [ [P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_148_37,(0,0,1):C.UVGC_148_38,(0,0,2):C.UVGC_148_39,(0,0,3):C.UVGC_121_8,(0,0,4):C.UVGC_148_40,(0,1,0):C.UVGC_153_51,(0,1,1):C.UVGC_153_52,(0,1,2):C.UVGC_153_53,(0,1,3):C.UVGC_153_54,(0,1,4):C.UVGC_153_55,(0,3,0):C.UVGC_153_51,(0,3,1):C.UVGC_153_52,(0,3,2):C.UVGC_155_58,(0,3,3):C.UVGC_120_6,(0,3,4):C.UVGC_153_55,(0,5,0):C.UVGC_148_37,(0,5,1):C.UVGC_148_38,(0,5,2):C.UVGC_150_43,(0,5,3):C.UVGC_150_44,(0,5,4):C.UVGC_148_40,(0,6,0):C.UVGC_148_37,(0,6,1):C.UVGC_148_38,(0,6,2):C.UVGC_149_41,(0,6,3):C.UVGC_149_42,(0,6,4):C.UVGC_148_40,(0,7,0):C.UVGC_153_51,(0,7,1):C.UVGC_153_52,(0,7,2):C.UVGC_154_56,(0,7,3):C.UVGC_154_57,(0,7,4):C.UVGC_153_55,(0,2,2):C.UVGC_120_5,(0,2,3):C.UVGC_120_6,(0,4,2):C.UVGC_121_7,(0,4,3):C.UVGC_121_8})
+                couplings = {(0,0,0):C.UVGC_151_37,(0,0,1):C.UVGC_151_38,(0,0,2):C.UVGC_151_39,(0,0,3):C.UVGC_124_8,(0,0,4):C.UVGC_151_40,(0,1,0):C.UVGC_156_51,(0,1,1):C.UVGC_156_52,(0,1,2):C.UVGC_156_53,(0,1,3):C.UVGC_156_54,(0,1,4):C.UVGC_156_55,(0,3,0):C.UVGC_156_51,(0,3,1):C.UVGC_156_52,(0,3,2):C.UVGC_158_58,(0,3,3):C.UVGC_123_6,(0,3,4):C.UVGC_156_55,(0,5,0):C.UVGC_151_37,(0,5,1):C.UVGC_151_38,(0,5,2):C.UVGC_153_43,(0,5,3):C.UVGC_153_44,(0,5,4):C.UVGC_151_40,(0,6,0):C.UVGC_151_37,(0,6,1):C.UVGC_151_38,(0,6,2):C.UVGC_152_41,(0,6,3):C.UVGC_152_42,(0,6,4):C.UVGC_151_40,(0,7,0):C.UVGC_156_51,(0,7,1):C.UVGC_156_52,(0,7,2):C.UVGC_157_56,(0,7,3):C.UVGC_157_57,(0,7,4):C.UVGC_156_55,(0,2,2):C.UVGC_123_5,(0,2,3):C.UVGC_123_6,(0,4,2):C.UVGC_124_7,(0,4,3):C.UVGC_124_8})
 
 V_51 = CTVertex(name = 'V_51',
                 type = 'UV',
@@ -415,7 +415,7 @@ V_51 = CTVertex(name = 'V_51',
                 color = [ 'd(-1,1,3)*d(-1,2,4)', 'd(-1,1,3)*f(-1,2,4)', 'd(-1,1,4)*d(-1,2,3)', 'd(-1,1,4)*f(-1,2,3)', 'd(-1,2,3)*f(-1,1,4)', 'd(-1,2,4)*f(-1,1,3)', 'f(-1,1,2)*f(-1,3,4)', 'f(-1,1,3)*f(-1,2,4)', 'f(-1,1,4)*f(-1,2,3)', 'Identity(1,2)*Identity(3,4)', 'Identity(1,3)*Identity(2,4)', 'Identity(1,4)*Identity(2,3)' ],
                 lorentz = [ L.VVVV2, L.VVVV3, L.VVVV4 ],
                 loop_particles = [ [ [P.b] ], [ [P.b], [P.c], [P.d], [P.s], [P.t], [P.u] ], [ [P.c], [P.d], [P.s], [P.u] ], [ [P.g] ], [ [P.ghG] ], [ [P.t] ] ],
-                couplings = {(2,0,3):C.UVGC_123_12,(2,0,4):C.UVGC_123_11,(0,0,3):C.UVGC_123_12,(0,0,4):C.UVGC_123_11,(4,0,3):C.UVGC_122_9,(4,0,4):C.UVGC_122_10,(3,0,3):C.UVGC_122_9,(3,0,4):C.UVGC_122_10,(8,0,3):C.UVGC_123_11,(8,0,4):C.UVGC_123_12,(6,0,0):C.UVGC_159_70,(6,0,2):C.UVGC_159_71,(6,0,3):C.UVGC_160_75,(6,0,4):C.UVGC_160_76,(6,0,5):C.UVGC_159_74,(7,0,0):C.UVGC_159_70,(7,0,2):C.UVGC_159_71,(7,0,3):C.UVGC_159_72,(7,0,4):C.UVGC_159_73,(7,0,5):C.UVGC_159_74,(5,0,3):C.UVGC_122_9,(5,0,4):C.UVGC_122_10,(1,0,3):C.UVGC_122_9,(1,0,4):C.UVGC_122_10,(11,0,3):C.UVGC_126_15,(11,0,4):C.UVGC_126_16,(10,0,3):C.UVGC_126_15,(10,0,4):C.UVGC_126_16,(9,0,3):C.UVGC_125_13,(9,0,4):C.UVGC_125_14,(2,1,3):C.UVGC_123_12,(2,1,4):C.UVGC_123_11,(0,1,3):C.UVGC_123_12,(0,1,4):C.UVGC_123_11,(4,1,3):C.UVGC_122_9,(4,1,4):C.UVGC_122_10,(3,1,3):C.UVGC_122_9,(3,1,4):C.UVGC_122_10,(8,1,0):C.UVGC_161_77,(8,1,2):C.UVGC_161_78,(8,1,3):C.UVGC_161_79,(8,1,4):C.UVGC_161_80,(8,1,5):C.UVGC_161_81,(6,1,0):C.UVGC_156_59,(6,1,3):C.UVGC_156_60,(6,1,4):C.UVGC_156_61,(6,1,5):C.UVGC_156_62,(7,1,1):C.UVGC_127_17,(7,1,3):C.UVGC_128_19,(7,1,4):C.UVGC_128_20,(5,1,3):C.UVGC_122_9,(5,1,4):C.UVGC_122_10,(1,1,3):C.UVGC_122_9,(1,1,4):C.UVGC_122_10,(11,1,3):C.UVGC_126_15,(11,1,4):C.UVGC_126_16,(10,1,3):C.UVGC_126_15,(10,1,4):C.UVGC_126_16,(9,1,3):C.UVGC_125_13,(9,1,4):C.UVGC_125_14,(0,2,3):C.UVGC_123_12,(0,2,4):C.UVGC_123_11,(2,2,3):C.UVGC_123_12,(2,2,4):C.UVGC_123_11,(5,2,3):C.UVGC_122_9,(5,2,4):C.UVGC_122_10,(1,2,3):C.UVGC_122_9,(1,2,4):C.UVGC_122_10,(7,2,0):C.UVGC_156_59,(7,2,3):C.UVGC_157_63,(7,2,4):C.UVGC_157_64,(7,2,5):C.UVGC_156_62,(4,2,3):C.UVGC_122_9,(4,2,4):C.UVGC_122_10,(3,2,3):C.UVGC_122_9,(3,2,4):C.UVGC_122_10,(8,2,0):C.UVGC_158_65,(8,2,2):C.UVGC_158_66,(8,2,3):C.UVGC_158_67,(8,2,4):C.UVGC_158_68,(8,2,5):C.UVGC_158_69,(6,2,1):C.UVGC_127_17,(6,2,3):C.UVGC_127_18,(6,2,4):C.UVGC_125_13,(11,2,3):C.UVGC_126_15,(11,2,4):C.UVGC_126_16,(10,2,3):C.UVGC_126_15,(10,2,4):C.UVGC_126_16,(9,2,3):C.UVGC_125_13,(9,2,4):C.UVGC_125_14})
+                couplings = {(2,0,3):C.UVGC_126_12,(2,0,4):C.UVGC_126_11,(0,0,3):C.UVGC_126_12,(0,0,4):C.UVGC_126_11,(4,0,3):C.UVGC_125_9,(4,0,4):C.UVGC_125_10,(3,0,3):C.UVGC_125_9,(3,0,4):C.UVGC_125_10,(8,0,3):C.UVGC_126_11,(8,0,4):C.UVGC_126_12,(6,0,0):C.UVGC_162_70,(6,0,2):C.UVGC_162_71,(6,0,3):C.UVGC_163_75,(6,0,4):C.UVGC_163_76,(6,0,5):C.UVGC_162_74,(7,0,0):C.UVGC_162_70,(7,0,2):C.UVGC_162_71,(7,0,3):C.UVGC_162_72,(7,0,4):C.UVGC_162_73,(7,0,5):C.UVGC_162_74,(5,0,3):C.UVGC_125_9,(5,0,4):C.UVGC_125_10,(1,0,3):C.UVGC_125_9,(1,0,4):C.UVGC_125_10,(11,0,3):C.UVGC_129_15,(11,0,4):C.UVGC_129_16,(10,0,3):C.UVGC_129_15,(10,0,4):C.UVGC_129_16,(9,0,3):C.UVGC_128_13,(9,0,4):C.UVGC_128_14,(2,1,3):C.UVGC_126_12,(2,1,4):C.UVGC_126_11,(0,1,3):C.UVGC_126_12,(0,1,4):C.UVGC_126_11,(4,1,3):C.UVGC_125_9,(4,1,4):C.UVGC_125_10,(3,1,3):C.UVGC_125_9,(3,1,4):C.UVGC_125_10,(8,1,0):C.UVGC_164_77,(8,1,2):C.UVGC_164_78,(8,1,3):C.UVGC_164_79,(8,1,4):C.UVGC_164_80,(8,1,5):C.UVGC_164_81,(6,1,0):C.UVGC_159_59,(6,1,3):C.UVGC_159_60,(6,1,4):C.UVGC_159_61,(6,1,5):C.UVGC_159_62,(7,1,1):C.UVGC_130_17,(7,1,3):C.UVGC_131_19,(7,1,4):C.UVGC_131_20,(5,1,3):C.UVGC_125_9,(5,1,4):C.UVGC_125_10,(1,1,3):C.UVGC_125_9,(1,1,4):C.UVGC_125_10,(11,1,3):C.UVGC_129_15,(11,1,4):C.UVGC_129_16,(10,1,3):C.UVGC_129_15,(10,1,4):C.UVGC_129_16,(9,1,3):C.UVGC_128_13,(9,1,4):C.UVGC_128_14,(0,2,3):C.UVGC_126_12,(0,2,4):C.UVGC_126_11,(2,2,3):C.UVGC_126_12,(2,2,4):C.UVGC_126_11,(5,2,3):C.UVGC_125_9,(5,2,4):C.UVGC_125_10,(1,2,3):C.UVGC_125_9,(1,2,4):C.UVGC_125_10,(7,2,0):C.UVGC_159_59,(7,2,3):C.UVGC_160_63,(7,2,4):C.UVGC_160_64,(7,2,5):C.UVGC_159_62,(4,2,3):C.UVGC_125_9,(4,2,4):C.UVGC_125_10,(3,2,3):C.UVGC_125_9,(3,2,4):C.UVGC_125_10,(8,2,0):C.UVGC_161_65,(8,2,2):C.UVGC_161_66,(8,2,3):C.UVGC_161_67,(8,2,4):C.UVGC_161_68,(8,2,5):C.UVGC_161_69,(6,2,1):C.UVGC_130_17,(6,2,3):C.UVGC_130_18,(6,2,4):C.UVGC_128_13,(11,2,3):C.UVGC_129_15,(11,2,4):C.UVGC_129_16,(10,2,3):C.UVGC_129_15,(10,2,4):C.UVGC_129_16,(9,2,3):C.UVGC_128_13,(9,2,4):C.UVGC_128_14})
 
 V_52 = CTVertex(name = 'V_52',
                 type = 'UV',
@@ -423,7 +423,7 @@ V_52 = CTVertex(name = 'V_52',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFS3, L.FFS4 ],
                 loop_particles = [ [ [P.b, P.g] ], [ [P.b, P.g, P.t] ], [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_170_93,(0,0,2):C.UVGC_170_94,(0,0,1):C.UVGC_170_95,(0,1,0):C.UVGC_171_96,(0,1,2):C.UVGC_171_97,(0,1,1):C.UVGC_171_98})
+                couplings = {(0,0,0):C.UVGC_173_93,(0,0,2):C.UVGC_173_94,(0,0,1):C.UVGC_173_95,(0,1,0):C.UVGC_174_96,(0,1,2):C.UVGC_174_97,(0,1,1):C.UVGC_174_98})
 
 V_53 = CTVertex(name = 'V_53',
                 type = 'UV',
@@ -431,7 +431,7 @@ V_53 = CTVertex(name = 'V_53',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFS1 ],
                 loop_particles = [ [ [P.b, P.g] ] ],
-                couplings = {(0,0,0):C.UVGC_145_30})
+                couplings = {(0,0,0):C.UVGC_148_30})
 
 V_54 = CTVertex(name = 'V_54',
                 type = 'UV',
@@ -439,7 +439,7 @@ V_54 = CTVertex(name = 'V_54',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFS2 ],
                 loop_particles = [ [ [P.b, P.g] ] ],
-                couplings = {(0,0,0):C.UVGC_144_29})
+                couplings = {(0,0,0):C.UVGC_147_29})
 
 V_55 = CTVertex(name = 'V_55',
                 type = 'UV',
@@ -447,7 +447,7 @@ V_55 = CTVertex(name = 'V_55',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFS3, L.FFS4 ],
                 loop_particles = [ [ [P.b, P.g] ], [ [P.b, P.g, P.t] ], [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_172_99,(0,0,2):C.UVGC_172_100,(0,0,1):C.UVGC_172_101,(0,1,0):C.UVGC_169_90,(0,1,2):C.UVGC_169_91,(0,1,1):C.UVGC_169_92})
+                couplings = {(0,0,0):C.UVGC_175_99,(0,0,2):C.UVGC_175_100,(0,0,1):C.UVGC_175_101,(0,1,0):C.UVGC_172_90,(0,1,2):C.UVGC_172_91,(0,1,1):C.UVGC_172_92})
 
 V_56 = CTVertex(name = 'V_56',
                 type = 'UV',
@@ -455,7 +455,7 @@ V_56 = CTVertex(name = 'V_56',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFS1 ],
                 loop_particles = [ [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_173_102})
+                couplings = {(0,0,0):C.UVGC_176_102})
 
 V_57 = CTVertex(name = 'V_57',
                 type = 'UV',
@@ -463,7 +463,7 @@ V_57 = CTVertex(name = 'V_57',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFS2 ],
                 loop_particles = [ [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_174_103})
+                couplings = {(0,0,0):C.UVGC_177_103})
 
 V_58 = CTVertex(name = 'V_58',
                 type = 'UV',
@@ -471,7 +471,7 @@ V_58 = CTVertex(name = 'V_58',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV4 ],
                 loop_particles = [ [ [P.g, P.u] ] ],
-                couplings = {(0,0,0):C.UVGC_109_2})
+                couplings = {(0,0,0):C.UVGC_112_2})
 
 V_59 = CTVertex(name = 'V_59',
                 type = 'UV',
@@ -479,7 +479,7 @@ V_59 = CTVertex(name = 'V_59',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV4 ],
                 loop_particles = [ [ [P.c, P.g] ] ],
-                couplings = {(0,0,0):C.UVGC_109_2})
+                couplings = {(0,0,0):C.UVGC_112_2})
 
 V_60 = CTVertex(name = 'V_60',
                 type = 'UV',
@@ -487,7 +487,7 @@ V_60 = CTVertex(name = 'V_60',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV1, L.FFV6 ],
                 loop_particles = [ [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_109_2,(0,1,0):C.UVGC_163_83})
+                couplings = {(0,0,0):C.UVGC_112_2,(0,1,0):C.UVGC_166_83})
 
 V_61 = CTVertex(name = 'V_61',
                 type = 'UV',
@@ -495,7 +495,7 @@ V_61 = CTVertex(name = 'V_61',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV4 ],
                 loop_particles = [ [ [P.d, P.g] ] ],
-                couplings = {(0,0,0):C.UVGC_112_4})
+                couplings = {(0,0,0):C.UVGC_115_4})
 
 V_62 = CTVertex(name = 'V_62',
                 type = 'UV',
@@ -503,7 +503,7 @@ V_62 = CTVertex(name = 'V_62',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV4 ],
                 loop_particles = [ [ [P.g, P.s] ] ],
-                couplings = {(0,0,0):C.UVGC_112_4})
+                couplings = {(0,0,0):C.UVGC_115_4})
 
 V_63 = CTVertex(name = 'V_63',
                 type = 'UV',
@@ -511,7 +511,7 @@ V_63 = CTVertex(name = 'V_63',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV1, L.FFV6 ],
                 loop_particles = [ [ [P.b, P.g] ] ],
-                couplings = {(0,0,0):C.UVGC_112_4,(0,1,0):C.UVGC_140_25})
+                couplings = {(0,0,0):C.UVGC_115_4,(0,1,0):C.UVGC_143_25})
 
 V_64 = CTVertex(name = 'V_64',
                 type = 'UV',
@@ -519,7 +519,7 @@ V_64 = CTVertex(name = 'V_64',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV5, L.FFV6 ],
                 loop_particles = [ [ [P.b] ], [ [P.c], [P.d], [P.s], [P.u] ], [ [P.g] ], [ [P.ghG] ], [ [P.g, P.u] ], [ [P.t] ] ],
-                couplings = {(0,0,4):C.UVGC_110_3,(0,1,0):C.UVGC_151_45,(0,1,1):C.UVGC_151_46,(0,1,2):C.UVGC_151_47,(0,1,3):C.UVGC_151_48,(0,1,5):C.UVGC_151_49})
+                couplings = {(0,0,4):C.UVGC_113_3,(0,1,0):C.UVGC_154_45,(0,1,1):C.UVGC_154_46,(0,1,2):C.UVGC_154_47,(0,1,3):C.UVGC_154_48,(0,1,5):C.UVGC_154_49})
 
 V_65 = CTVertex(name = 'V_65',
                 type = 'UV',
@@ -527,7 +527,7 @@ V_65 = CTVertex(name = 'V_65',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV5, L.FFV6 ],
                 loop_particles = [ [ [P.b] ], [ [P.c], [P.d], [P.s], [P.u] ], [ [P.c, P.g] ], [ [P.g] ], [ [P.ghG] ], [ [P.t] ] ],
-                couplings = {(0,0,2):C.UVGC_110_3,(0,1,0):C.UVGC_151_45,(0,1,1):C.UVGC_151_46,(0,1,3):C.UVGC_151_47,(0,1,4):C.UVGC_151_48,(0,1,5):C.UVGC_151_49})
+                couplings = {(0,0,2):C.UVGC_113_3,(0,1,0):C.UVGC_154_45,(0,1,1):C.UVGC_154_46,(0,1,3):C.UVGC_154_47,(0,1,4):C.UVGC_154_48,(0,1,5):C.UVGC_154_49})
 
 V_66 = CTVertex(name = 'V_66',
                 type = 'UV',
@@ -535,7 +535,7 @@ V_66 = CTVertex(name = 'V_66',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV1, L.FFV6 ],
                 loop_particles = [ [ [P.b] ], [ [P.c], [P.d], [P.s], [P.u] ], [ [P.g] ], [ [P.ghG] ], [ [P.g, P.t] ], [ [P.t] ] ],
-                couplings = {(0,0,4):C.UVGC_110_3,(0,1,0):C.UVGC_151_45,(0,1,1):C.UVGC_151_46,(0,1,2):C.UVGC_151_47,(0,1,3):C.UVGC_151_48,(0,1,5):C.UVGC_151_49,(0,1,4):C.UVGC_164_84})
+                couplings = {(0,0,4):C.UVGC_113_3,(0,1,0):C.UVGC_154_45,(0,1,1):C.UVGC_154_46,(0,1,2):C.UVGC_154_47,(0,1,3):C.UVGC_154_48,(0,1,5):C.UVGC_154_49,(0,1,4):C.UVGC_167_84})
 
 V_67 = CTVertex(name = 'V_67',
                 type = 'UV',
@@ -543,7 +543,7 @@ V_67 = CTVertex(name = 'V_67',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV5, L.FFV6 ],
                 loop_particles = [ [ [P.b] ], [ [P.c], [P.d], [P.s], [P.u] ], [ [P.d, P.g] ], [ [P.g] ], [ [P.ghG] ], [ [P.t] ] ],
-                couplings = {(0,0,2):C.UVGC_110_3,(0,1,0):C.UVGC_151_45,(0,1,1):C.UVGC_151_46,(0,1,3):C.UVGC_151_47,(0,1,4):C.UVGC_151_48,(0,1,5):C.UVGC_151_49})
+                couplings = {(0,0,2):C.UVGC_113_3,(0,1,0):C.UVGC_154_45,(0,1,1):C.UVGC_154_46,(0,1,3):C.UVGC_154_47,(0,1,4):C.UVGC_154_48,(0,1,5):C.UVGC_154_49})
 
 V_68 = CTVertex(name = 'V_68',
                 type = 'UV',
@@ -551,7 +551,7 @@ V_68 = CTVertex(name = 'V_68',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV5, L.FFV6 ],
                 loop_particles = [ [ [P.b] ], [ [P.c], [P.d], [P.s], [P.u] ], [ [P.g] ], [ [P.ghG] ], [ [P.g, P.s] ], [ [P.t] ] ],
-                couplings = {(0,0,4):C.UVGC_110_3,(0,1,0):C.UVGC_151_45,(0,1,1):C.UVGC_151_46,(0,1,2):C.UVGC_151_47,(0,1,3):C.UVGC_151_48,(0,1,5):C.UVGC_151_49})
+                couplings = {(0,0,4):C.UVGC_113_3,(0,1,0):C.UVGC_154_45,(0,1,1):C.UVGC_154_46,(0,1,2):C.UVGC_154_47,(0,1,3):C.UVGC_154_48,(0,1,5):C.UVGC_154_49})
 
 V_69 = CTVertex(name = 'V_69',
                 type = 'UV',
@@ -559,7 +559,7 @@ V_69 = CTVertex(name = 'V_69',
                 color = [ 'T(3,2,1)' ],
                 lorentz = [ L.FFV1, L.FFV6 ],
                 loop_particles = [ [ [P.b] ], [ [P.b, P.g] ], [ [P.c], [P.d], [P.s], [P.u] ], [ [P.g] ], [ [P.ghG] ], [ [P.t] ] ],
-                couplings = {(0,0,1):C.UVGC_110_3,(0,1,0):C.UVGC_151_45,(0,1,2):C.UVGC_151_46,(0,1,3):C.UVGC_151_47,(0,1,4):C.UVGC_151_48,(0,1,5):C.UVGC_151_49,(0,1,1):C.UVGC_152_50})
+                couplings = {(0,0,1):C.UVGC_113_3,(0,1,0):C.UVGC_154_45,(0,1,2):C.UVGC_154_46,(0,1,3):C.UVGC_154_47,(0,1,4):C.UVGC_154_48,(0,1,5):C.UVGC_154_49,(0,1,1):C.UVGC_155_50})
 
 V_70 = CTVertex(name = 'V_70',
                 type = 'UV',
@@ -567,7 +567,7 @@ V_70 = CTVertex(name = 'V_70',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.d, P.g], [P.g, P.u] ], [ [P.d, P.g, P.u] ] ],
-                couplings = {(0,0,0):C.UVGC_137_22,(0,0,1):C.UVGC_137_23})
+                couplings = {(0,0,0):C.UVGC_140_22,(0,0,1):C.UVGC_140_23})
 
 V_71 = CTVertex(name = 'V_71',
                 type = 'UV',
@@ -575,7 +575,7 @@ V_71 = CTVertex(name = 'V_71',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.c, P.g], [P.g, P.s] ], [ [P.c, P.g, P.s] ] ],
-                couplings = {(0,0,0):C.UVGC_137_22,(0,0,1):C.UVGC_137_23})
+                couplings = {(0,0,0):C.UVGC_140_22,(0,0,1):C.UVGC_140_23})
 
 V_72 = CTVertex(name = 'V_72',
                 type = 'UV',
@@ -583,7 +583,7 @@ V_72 = CTVertex(name = 'V_72',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.b, P.g] ], [ [P.b, P.g, P.t] ], [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_166_86,(0,0,2):C.UVGC_166_87,(0,0,1):C.UVGC_137_23})
+                couplings = {(0,0,0):C.UVGC_169_86,(0,0,2):C.UVGC_169_87,(0,0,1):C.UVGC_140_23})
 
 V_73 = CTVertex(name = 'V_73',
                 type = 'UV',
@@ -591,7 +591,7 @@ V_73 = CTVertex(name = 'V_73',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.d, P.g], [P.g, P.u] ], [ [P.d, P.g, P.u] ] ],
-                couplings = {(0,0,0):C.UVGC_137_22,(0,0,1):C.UVGC_137_23})
+                couplings = {(0,0,0):C.UVGC_140_22,(0,0,1):C.UVGC_140_23})
 
 V_74 = CTVertex(name = 'V_74',
                 type = 'UV',
@@ -599,7 +599,7 @@ V_74 = CTVertex(name = 'V_74',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.c, P.g], [P.g, P.s] ], [ [P.c, P.g, P.s] ] ],
-                couplings = {(0,0,0):C.UVGC_137_22,(0,0,1):C.UVGC_137_23})
+                couplings = {(0,0,0):C.UVGC_140_22,(0,0,1):C.UVGC_140_23})
 
 V_75 = CTVertex(name = 'V_75',
                 type = 'UV',
@@ -607,7 +607,7 @@ V_75 = CTVertex(name = 'V_75',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2 ],
                 loop_particles = [ [ [P.b, P.g] ], [ [P.b, P.g, P.t] ], [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_166_86,(0,0,2):C.UVGC_166_87,(0,0,1):C.UVGC_137_23})
+                couplings = {(0,0,0):C.UVGC_169_86,(0,0,2):C.UVGC_169_87,(0,0,1):C.UVGC_140_23})
 
 V_76 = CTVertex(name = 'V_76',
                 type = 'UV',
@@ -615,7 +615,7 @@ V_76 = CTVertex(name = 'V_76',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2, L.FFV3 ],
                 loop_particles = [ [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_167_88,(0,1,0):C.UVGC_168_89})
+                couplings = {(0,0,0):C.UVGC_170_88,(0,1,0):C.UVGC_171_89})
 
 V_77 = CTVertex(name = 'V_77',
                 type = 'UV',
@@ -623,7 +623,7 @@ V_77 = CTVertex(name = 'V_77',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FFV2, L.FFV3 ],
                 loop_particles = [ [ [P.b, P.g] ] ],
-                couplings = {(0,0,0):C.UVGC_142_27,(0,1,0):C.UVGC_143_28})
+                couplings = {(0,0,0):C.UVGC_145_27,(0,1,0):C.UVGC_146_28})
 
 V_78 = CTVertex(name = 'V_78',
                 type = 'UV',
@@ -631,7 +631,7 @@ V_78 = CTVertex(name = 'V_78',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF1, L.FF3, L.FF5 ],
                 loop_particles = [ [ [P.g, P.u] ] ],
-                couplings = {(0,0,0):C.UVGC_131_21,(0,1,0):C.UVGC_108_1,(0,2,0):C.UVGC_108_1})
+                couplings = {(0,0,0):C.UVGC_134_21,(0,1,0):C.UVGC_111_1,(0,2,0):C.UVGC_111_1})
 
 V_79 = CTVertex(name = 'V_79',
                 type = 'UV',
@@ -639,7 +639,7 @@ V_79 = CTVertex(name = 'V_79',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF1, L.FF3, L.FF5 ],
                 loop_particles = [ [ [P.c, P.g] ] ],
-                couplings = {(0,0,0):C.UVGC_131_21,(0,1,0):C.UVGC_108_1,(0,2,0):C.UVGC_108_1})
+                couplings = {(0,0,0):C.UVGC_134_21,(0,1,0):C.UVGC_111_1,(0,2,0):C.UVGC_111_1})
 
 V_80 = CTVertex(name = 'V_80',
                 type = 'UV',
@@ -647,7 +647,7 @@ V_80 = CTVertex(name = 'V_80',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF2, L.FF3, L.FF4, L.FF5 ],
                 loop_particles = [ [ [P.g, P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_165_85,(0,2,0):C.UVGC_165_85,(0,1,0):C.UVGC_162_82,(0,3,0):C.UVGC_162_82})
+                couplings = {(0,0,0):C.UVGC_168_85,(0,2,0):C.UVGC_168_85,(0,1,0):C.UVGC_165_82,(0,3,0):C.UVGC_165_82})
 
 V_81 = CTVertex(name = 'V_81',
                 type = 'UV',
@@ -655,7 +655,7 @@ V_81 = CTVertex(name = 'V_81',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF1, L.FF3, L.FF5 ],
                 loop_particles = [ [ [P.d, P.g] ] ],
-                couplings = {(0,0,0):C.UVGC_131_21,(0,1,0):C.UVGC_108_1,(0,2,0):C.UVGC_108_1})
+                couplings = {(0,0,0):C.UVGC_134_21,(0,1,0):C.UVGC_111_1,(0,2,0):C.UVGC_111_1})
 
 V_82 = CTVertex(name = 'V_82',
                 type = 'UV',
@@ -663,7 +663,7 @@ V_82 = CTVertex(name = 'V_82',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF1, L.FF3, L.FF5 ],
                 loop_particles = [ [ [P.g, P.s] ] ],
-                couplings = {(0,0,0):C.UVGC_131_21,(0,1,0):C.UVGC_108_1,(0,2,0):C.UVGC_108_1})
+                couplings = {(0,0,0):C.UVGC_134_21,(0,1,0):C.UVGC_111_1,(0,2,0):C.UVGC_111_1})
 
 V_83 = CTVertex(name = 'V_83',
                 type = 'UV',
@@ -671,7 +671,7 @@ V_83 = CTVertex(name = 'V_83',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.FF2, L.FF3, L.FF4, L.FF5 ],
                 loop_particles = [ [ [P.b, P.g] ] ],
-                couplings = {(0,0,0):C.UVGC_141_26,(0,2,0):C.UVGC_141_26,(0,1,0):C.UVGC_139_24,(0,3,0):C.UVGC_139_24})
+                couplings = {(0,0,0):C.UVGC_144_26,(0,2,0):C.UVGC_144_26,(0,1,0):C.UVGC_142_24,(0,3,0):C.UVGC_142_24})
 
 V_84 = CTVertex(name = 'V_84',
                 type = 'UV',
@@ -679,5 +679,5 @@ V_84 = CTVertex(name = 'V_84',
                 color = [ 'Identity(1,2)' ],
                 lorentz = [ L.VV1, L.VV3 ],
                 loop_particles = [ [ [P.b] ], [ [P.g] ], [ [P.ghG] ], [ [P.t] ] ],
-                couplings = {(0,0,0):C.UVGC_147_33,(0,0,1):C.UVGC_147_34,(0,0,2):C.UVGC_147_35,(0,0,3):C.UVGC_147_36,(0,1,0):C.UVGC_146_31,(0,1,3):C.UVGC_146_32})
+                couplings = {(0,0,0):C.UVGC_150_33,(0,0,1):C.UVGC_150_34,(0,0,2):C.UVGC_150_35,(0,0,3):C.UVGC_150_36,(0,1,0):C.UVGC_149_31,(0,1,3):C.UVGC_149_32})
 

@@ -13,12 +13,12 @@
 ###################################
 Block frblock 
     1 1.000000e+00 # yFqR 
-    2 1.000000e+00 # yFbR 
-    3 1.000000e+00 # yFtR 
-    4 2.000000e-02 # lamYuH 
-    5 2.000000e-02 # lamYdH 
-    6 1.000000e-01 # lamYu 
-    7 1.000000e-01 # lamYd 
+    2 0.000000e+00 # yFbR 
+    3 0.000000e+00 # yFtR 
+    4 0.000000e+00 # lamYuH 
+    5 0.000000e+00 # lamYdH 
+    6 0.000000e+00 # lamYu 
+    7 0.000000e+00 # lamYd 
 
 ###################################
 ## INFORMATION FOR MASS
@@ -76,8 +76,8 @@ DECAY   6 1.508336e+00 # WT
 DECAY  23 2.495200e+00 # WZ 
 DECAY  24 2.085000e+00 # WW 
 DECAY  25 4.070000e-03 # WH 
-DECAY 5910001 1.370000e+01 # WYd 
-DECAY 5910002 1.370000e+01 # WYu 
+DECAY 5910001 1.830000e+01 # WYd 
+DECAY 5910002 1.830000e+01 # WYu 
 ## Dependent parameters, given by model restrictions.
 ## Those values should be edited following the 
 ## analytical expression. MG5 ignores those values 
