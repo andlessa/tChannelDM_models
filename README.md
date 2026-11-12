@@ -16,7 +16,7 @@ The models are defined based on the spin and quantum numbers of the Mediator:
 | [DMsimpt_Yscalar_leptons_NLO_UFO](ScalarMediator/DMsimpt_Yscalar_leptons/DMsimpt_Yscalar_leptons_NLO_UFO) | 0 | Lepto-philic | $Y_{Se}$ (charge $-1$, colour singlet) | $e_R,\ \mu_R,\ \tau_R$ | 
 | [DMsimpt_Yscalar_quarks_NLO_UFO](ScalarMediator/DMsimpt_Yscalar_quarks/DMsimpt_Yscalar_quarks_NLO_UFO) | 0 | Quark-philic | $Y_{Su}$ (charge $+2/3$), $Y_{Sd}$ (charge $-1/3$), colour triplets | $u_R,c_R,t_R$ / $d_R,s_R,b_R$ | 
 
-More information about each model can be found in the respective folders.
+**More information about each model can be found in the respective folders.**
 
 ## Cross Sections
 
