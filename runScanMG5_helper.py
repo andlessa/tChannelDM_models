@@ -157,21 +157,24 @@ def getInfoFromOutput(outputStr):
     summaryLines = [l for l in summaryBlock.split('\\n') if l.strip()]
     # Get info from lines:
     xsec, runNumb, runTag, nevts = None,None,None,-1
-    for l in summaryLines:
-        if 'tag' in l:
-            runNumb,runTag = l.split('tag:')
-            runNumb = runNumb.replace(':','').replace('=','').strip()
-            runTag = runTag.replace(':','').replace('=','').strip()
-        elif 'cross-section' in l.lower():
-            xsec = eval(l.lower().split(':')[1].split('+-')[0])
-        elif 'nb of events'in l.lower():
-            nevts = eval(l.lower().split(':')[1])
-
+    try:
+        for l in summaryLines:
+            if 'tag' in l:
+                runNumb,runTag = l.split('tag:')
+                runNumb = runNumb.replace(':','').replace('=','').strip()
+                runTag = runTag.replace(':','').replace('=','').strip()
+            elif 'cross-section' in l.lower():
+                xsec = eval(l.lower().split(':')[1].split('+-')[0])
+            elif 'nb of events'in l.lower():
+                nevts = eval(l.lower().split(':')[1])
+    except Exception as e:
+        logger.warning(f"Could not parse MG5 output summary. Error: {e}")
+        
     runInfo = {'run number' : runNumb, 'run tag' : runTag, 
                'cross-section (pb)' : xsec, 'Number of events' : int(nevts)}
     return runInfo
 
-def runMG5(parser,runPythia=False, runMadSpin=False) -> Dict:
+def runMG5(parser,runPythia=False, runMadSpin=False, runFO=True) -> Dict:
     
     """
     Runs the madgraph event generation and Pythia, if runPythia = True.
@@ -210,7 +213,7 @@ def runMG5(parser,runPythia=False, runMadSpin=False) -> Dict:
         os.makedirs(os.path.join(run_tmp,'Events'))
         shutil.move(run_tmp, runFolder)
        
-        logger.info("Created temporary folder %s" %runFolder) 
+        logger.info("Created temporary folder %s" %runFolder)
             
     if not os.path.isdir(runFolder):
         logger.error('Run folder %s not found.' %runFolder)
@@ -246,6 +249,8 @@ def runMG5(parser,runPythia=False, runMadSpin=False) -> Dict:
     commandsFile = tempfile.mkstemp(suffix='.txt', prefix='MG5_commands_', dir=runFolder)
     os.close(commandsFile[0])
     commandsFileF = open(commandsFile[1],'w')
+    if runFO:
+        commandsFileF.write('fixed_order=ON\n')
     if runPythia:
         commandsFileF.write('shower=Pythia8\n')
     else:
@@ -433,10 +438,12 @@ def generateEvents(parser : Union[str,Dict]) -> Dict:
     if run_pythia and run_delphespythia:
         logger.warning('Both runPythia and runDelphesPythia set to True. Setting runDelphesPythia to False')
         run_delphespythia = False
+    
+    run_FO = parserDict["options"].get("runFO", True)
 
     if run_madgraph:
         runInfo = runMG5(parser,runPythia=run_pythia,
-                         runMadSpin=run_madspin)
+                         runMadSpin=run_madspin, runFO=run_FO)
         if run_delphes or run_delphespythia:
             runInfo = runDelphes(parser,runInfo,
                              runDelphesPythia=run_delphespythia)
