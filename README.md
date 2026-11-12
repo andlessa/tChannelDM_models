@@ -27,7 +27,7 @@ The NLO cross-sections for each model as a function of the mediator mass is show
     <img src="plots/tChannel_xsections.png" alt="Cross-section" width=40%/>
 </p>
 
-the values can be reproduced using the in the [xsections branch](https://github.com/andlessa/tChannelDM_models/tree/xsections).
+the values can be reproduced using the [scan_parameters](scan_parameters.ini) and the cards in the [Cards folder](./Cards).
 
 --------------------------------------
 ## References
