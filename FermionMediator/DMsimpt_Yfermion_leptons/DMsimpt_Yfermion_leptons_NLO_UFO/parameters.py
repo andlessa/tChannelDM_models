@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Fri 30 Oct 2026 16:59:45
+# Date: Thu 12 Nov 2026 09:59:22
 
 
 
@@ -77,7 +77,7 @@ ymtau = Parameter(name = 'ymtau',
 yFeR = Parameter(name = 'yFeR',
                  nature = 'external',
                  type = 'real',
-                 value = 1.e-7,
+                 value = 1.,
                  texname = 'y_{\\text{YeR}}',
                  lhablock = 'FRBlock',
                  lhacode = [ 1 ])
@@ -85,7 +85,7 @@ yFeR = Parameter(name = 'yFeR',
 yFmuR = Parameter(name = 'yFmuR',
                   nature = 'external',
                   type = 'real',
-                  value = 1.e-7,
+                  value = 0.,
                   texname = 'y_{\\text{YmuR}}',
                   lhablock = 'FRBlock',
                   lhacode = [ 2 ])
@@ -93,7 +93,7 @@ yFmuR = Parameter(name = 'yFmuR',
 yFtaR = Parameter(name = 'yFtaR',
                   nature = 'external',
                   type = 'real',
-                  value = 1.e-7,
+                  value = 0.,
                   texname = 'y_{\\text{YtaR}}',
                   lhablock = 'FRBlock',
                   lhacode = [ 3 ])
@@ -101,7 +101,7 @@ yFtaR = Parameter(name = 'yFtaR',
 lamXsH = Parameter(name = 'lamXsH',
                    nature = 'external',
                    type = 'real',
-                   value = 0.02,
+                   value = 0.,
                    texname = '\\lambda _{\\text{xsh}}',
                    lhablock = 'FRBlock',
                    lhacode = [ 4 ])
@@ -109,7 +109,7 @@ lamXsH = Parameter(name = 'lamXsH',
 lamXs = Parameter(name = 'lamXs',
                   nature = 'external',
                   type = 'real',
-                  value = 0.1,
+                  value = 0.,
                   texname = '\\lambda _{\\text{xs}}',
                   lhablock = 'FRBlock',
                   lhacode = [ 5 ])
@@ -205,7 +205,7 @@ WH = Parameter(name = 'WH',
 WY = Parameter(name = 'WY',
                nature = 'external',
                type = 'real',
-               value = 1.375e-13,
+               value = 4.6,
                texname = '\\text{WY}',
                lhablock = 'DECAY',
                lhacode = [ 5920011 ])

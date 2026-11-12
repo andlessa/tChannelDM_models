@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.1 for Linux x86 (64-bit) (July 24, 2023)
-# Date: Fri 30 Oct 2026 16:59:45
+# Date: Thu 12 Nov 2026 09:59:22
 
 
 from object_library import all_couplings, Coupling
@@ -286,11 +286,11 @@ GC_71 = Coupling(name = 'GC_71',
                  order = {'NP':1})
 
 GC_72 = Coupling(name = 'GC_72',
-                 value = 'complex(0,1)*yFmuR',
+                 value = '-(complex(0,1)*yFmuR)',
                  order = {'NP':1})
 
 GC_73 = Coupling(name = 'GC_73',
-                 value = 'complex(0,1)*yFtaR',
+                 value = '-(complex(0,1)*yFtaR)',
                  order = {'NP':1})
 
 GC_74 = Coupling(name = 'GC_74',
